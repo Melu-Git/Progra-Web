@@ -24,6 +24,7 @@ header{
     align-content: center;
     padding-top: 5%;
     width: 100%;
+    justify-content: center;
 }
 nav ul{
     /* marco del menu*/
@@ -56,4 +57,94 @@ nav ul li a:hover{
 }
 .imag{
     width: 100%;
+    
+}
+.container-title{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    color: #222;
+}
+main{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.container-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.container-img{
+    padding-top: 25px;
+}
+.container-title span{
+    font-size: 24px;
+    font-weight: 300;
+}
+.form-grupo p{
+   margin-top: 10px;
+}
+.container-contenidos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.container-contenidos span{
+    font-size: 24px;
+    font-weight: 300;
+}
+.container-contenidos p{
+    font-size: 13px;
+    color: #252525;
+    line-height: 22px;
+    margin-top: 10px;
+}
+.container-docente h4{
+    font-size: 24px;
+    font-weight: 300;
+}
+.container-docente p{
+    background-color: #7A777F;
+    margin-top: 15px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.contiene-cursos-rela h2{
+text-align: center;
+margin-bottom: 30px
+}
+.card-list-cursos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.card{
+    cursor: pointer;
+}
+.card-img{
+background: transparent;
+margin-bottom: 15px;
+}
+.card-img img{
+height: 400px;
+object-fit: cover;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+width: 280px
+}
+.text-curso{
+   
+    justify-content: space-between;
+}
+.categoria{
+    color: #252525;
+    font-weight: 300;
+    line-height: 1.4;
+}
+footer{
+    padding: 30px;
+    background-color: #F7BF03;
+    margin-top: 50px;
+    color: #fff;
 }
