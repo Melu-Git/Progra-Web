@@ -71,6 +71,7 @@ main{
     margin-bottom: 50px;
 }
 
+
 .container-info{
     flex: 1;
     display: flex;
@@ -126,12 +127,14 @@ margin-bottom: 30px
 .card-img{
 background: transparent;
 margin-bottom: 15px;
+
 }
 .card-img img{
 height: 400px;
 object-fit: cover;
 box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 width: 280px
+
 }
 .text-curso{
    
@@ -147,4 +150,45 @@ footer{
     background-color: #F7BF03;
     margin-top: 50px;
     color: #fff;
+}
+.boton-inscribirse{
+    border: none;
+    background-color: #F7BF03;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.boton-inscribirse:hover{
+    background-color: #252525;
+    
+}
+.conteiner-introduccion,
+.conteiner-clasuno,
+.conteiner-clasedos{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 0;
+    border-top: 1px solid #e4e4e4;
+}
+.titulo-introduccion,
+.titulo-claseuno,
+.titulo-clasedos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.texto-introduccion{
+    font-size: 13px;
+    color: #252525;
+    line-height: 22px;
+    margin-top: 10px;
 }
