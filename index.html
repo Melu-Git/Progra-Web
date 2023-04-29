@@ -9,35 +9,59 @@
 </head>
 <body>
     <header id="Inicio">
-        <h1><img class="logo" src="Img/CELESTINA.jpg"> </h1>
-        <!--BARRA DE BUSQUEDA-->
-            <form action="../../form-result.html" method="post" > 
+        <h1><a href="index.html"> <img id="Logo_Principal" src="Img/CELESTINA.png" ></a></h1> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Calendario.html">Calendario</a></li>
+            <li><a href="Detalle del curso.html">Detalles del curso</a></li>
+            <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
+            <li><a href="Personalización.html">Gift Cards</a></li>
+            <li> <!--BARRA DE BUSQUEDA-->
+            <form action="../../form-result.html" method="post" id="buscador"> 
                 <p>
                     <input type="search" name="Busqueda" placeholder="Buscar"> 
                     <input type="submit" value="Buscar">
                 </p>
-            </form>
-        <img class="carrito" src="Img/Iconos gratuitos de Carrito De Compras diseñados por Freepik.png" alt="carrito">
-        <!--CARRITO DE COMPRAS-->
-    </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Contacto.html">Contactanos</a></li>
-                <li><a href="Calendario.html">Calendario</a></li>
-                <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-                <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
-                <li><a href="Personalización.html">Gift Cards</a></li>
-            </ul>
-        </nav>
-        <div class="carrousel">
-                <img src="Img/descarga (4).jfif" alt="pruebaBanner" class="imag">
-        </div>
+            </form></li>
+            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+        </ul>
+    </nav>
+    <!--CONTENIDO PRINCIPAL-->
     <main>
+            <div class="carrousel">
+                <img src="Img/descarga (4).jfif" alt="pruebaBanner" class="imag">
+            </div>
+        <div class="Pasos a seguir">
+            <div id="Paso_1">
 
+            </div>
+            <div id="Paso_2">
+
+            </div>
+            <div id="Paso_3">
+
+            </div>
+        </div> 
+        <section id="Cursos destacados">
+            <h3>Cursos destacados</h3>
+            <div>Curso 1</div>
+            <div>Curso 2</div>
+            <div>Curso 3</div>
+        </section>  
+        <section id="Metodos de pago">
+            <h3>Métodos de pago</h3>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </section> 
     </main>
    <footer>
-
+    <div>Datos del grupo</div>
+    <div>Menu inferior</div>
+    <div>Redes</div>
    </footer>
 </body>
 </html>
