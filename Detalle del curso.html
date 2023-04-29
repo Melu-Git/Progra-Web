@@ -1,59 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estilo_detalleCurso.css">
+    <title>Detalle del curso</title>
 </head>
-<header id="DetalleCurso">
-    <h1><img class="logo" src="Img/CELESTINA.jpg"> </h1>
-    
-    <!--BARRA DE BUSQUEDA-->
-    <form action="../../form-result.html" method="post" > 
-        <p>
-            <input type="search" name="Busqueda" placeholder="Buscar"> 
-            <input type="submit" value="Buscar">
-        </p>
-    </form>
-    <img class="carrito" src="Img/dd7213770ced500e719464c5053e88d3-removebg-preview.png" alt="ticket">
-    <!--CARRITO DE COMPRAS-->
-</header>
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Contacto.html">Contactanos</a></li>
-        <li><a href="Calendario.html">Calendario</a></li>
-        <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-        <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
-        <li><a href="Personalización.html">Gift Cards</a></li>
-    </ul>
-</nav>
-
-<body >
- 
-<main>
-    
-    <section class="seccion-1">
+<body>
+    <header id="Inicio">
+        <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.png" ></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Calendario.html">Calendario</a></li>
+            <li><a href="Detalle del curso.html">Detalles del curso</a></li>
+            <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
+            <li><a href="Personalización.html">Gift Cards</a></li>
+            <!--BARRA DE BUSQUEDA--> 
+            <li><form action="../../form-result.html" method="post" id="buscador"> 
+                <p>
+                    <input type="search" name="Busqueda" placeholder="Buscar"> 
+                    <input type="submit" value="Buscar" id="texto_buscar">
+                </p>
+            </form></li>
+            <li id="carrito"><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+        </ul>
+    </nav>
+    <main>
+        <section class="seccion-1">
             <div class="container-img">
-                <img src="Img/imgReferencia.jpg" alt="">
+                <img src="Img/imgReferencia.jpg">
             </div>
-                <div class="container-info">
+            <div class="container-info">
+               <div class="container-title">
                   <div class="container-title">
-                   <span>TITULO CURSO</span>
+                    <span>TITULO CURSO</span>
                   </div>
-                 <div class="container-detalles-curso">
-                  <div class="form-grupo">
-                    <p>Valor:</p>
-                    <p>Tiempo de dedicacion necesario:</p>
-                    <p>Descripcion del curso:</p>
-                    <p>Requisitos previos:</p>
+                <div class="container-detalles-curso">
+                    <div class="form-grupo">
+                        <p>Valor:</p>
+                        <p>Tiempo de dedicacion necesario:</p>
+                        <p>Descripcion del curso:</p>
+                        <p>Requisitos previos:</p>
+                    </div>
+                    <button class="boton-inscribirse"> INSCRIBIRSE</button>
                 </div>
-                <button class="boton-inscribirse"> INSCRIBIRSE</button>
-            </div>
             <section class="seccion-1-p2">
-
                 <div class="conteiner-introduccion">
                     <div class="titulo-introduccion"><h4>INTRODUCCION</h4> </div>
                     <div class="texto-introduccion">
@@ -66,8 +62,7 @@
                 <div class="conteiner-clasedos">
                     <div class="titulo-clasedos"><h4>CLASE 2</h4></div>
                 </div>
-              
-            </div>
+                </div>
             </section>
         </section>
         <section>
@@ -174,20 +169,18 @@
                             </p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
+
     </main>
-
-</body>
-
 <footer class="pie-pagina">
     <div class="grupo-1">
         <div class="box">
             <h4>INTEGRANTES</h4>
             <p>Gómez Celeste-45809908</p>
-            <p>Viola Melina</p>
+            <p>Viola Melina-44163024</p>
         </div>
      
         <div class="box">
@@ -223,4 +216,5 @@
     </div>
    
 </footer>
+</body>
 </html>

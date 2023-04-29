@@ -1,0 +1,16 @@
+*{
+    
+}
+#logo-contacto{
+    width: 21px;
+    height: 21px;
+}
+#section-contact{
+    background-color: bisque;
+}
+.contact-form{
+    font-size: 10px;
+}
+.contact-form__p label{
+    font-size: 2em;
+}
