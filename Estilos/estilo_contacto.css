@@ -1,16 +1,108 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#logo-contacto{
-    width: 21px;
-    height: 21px;
-}
-#section-contact{
+body{
     background-color: bisque;
 }
+main{
+    height: 100vh;
+}
+#back a{
+    color: #c5a22d;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    background-color: #f1e294;
+    transform: translate(-50%, 15%);
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    
+}
+a:link{
+    text-decoration: none;
+}
+#back :hover{
+    color: #ffffff;
+    background-color: #c5a22d;
+}
+#mapa{
+    left: 30%;
+    width: 650px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    position: absolute;
+    background-color: #f1e294;
+    transform: translate(-45%, 15%); /*izq-der// arriba-abajo*/
+    border-radius: 10px 10px 10px 10px;
+}
+#mapa h3{
+    padding: 20px;
+    font-size: x-large;
+}
+#logo-contacto{
+    width: 100px;
+    height: 100px;
+}
+#section-contact{
+    background-color: #f1e294;
+    width: 600px;
+    position: absolute ;
+    left: 53%;
+    transform: translate(-10%, 10%);
+    border-radius: 10px 10px 10px 10px;
+}
+header{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+}
+header span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
 .contact-form{
-    font-size: 10px;
+    padding: 0.8rem;
+    overflow: hidden;
+    color: grey;
 }
-.contact-form__p label{
-    font-size: 2em;
+.contact-form label, .contact-form input, .contact-form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
 }
+.contact-form label{
+    font-weight: 700px;
+}
+.contact-form input:not([type=´submit]), .contact-form textarea{
+    border: none;
+    border-bottom: 2px solid #c5a22d;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+}
+.contact-form textarea{
+    min-height: 100px;
+    max-width: 570px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    color: #c5a22d;
+    font-size: large;
+    border-style: double;
+    background-color: #f1e294;
+    border-radius: 10px 10px 10px 10px;
+}
+button:hover{
+    color: #ffffff;
+    background-color: #c5a22d;
+}
+

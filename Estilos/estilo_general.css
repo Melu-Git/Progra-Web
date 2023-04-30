@@ -1,8 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    background-color: #d9c6a6;
+    border-radius: 20px 20px 20px 20px;
 }
 /*EMCABEZADO*/
 header{
@@ -17,27 +22,30 @@ header{
     text-align: center;
 }
 /*MENU INICIO*/
-nav ul{
-    /* marco del menu*/
-    list-style-type: none;
-    margin: 0;
-    margin-bottom: 0;
-    padding: auto;
-    width: auto;
-    overflow: hidden;
+nav{
     border-top: 5px solid #77746f;
     border-bottom: 5px solid #77746f;
     background-color:#ffd754;
 }
+nav ul{
+    /* marco del menu*/
+    list-style: none;
+    margin: 0;
+    padding: auto;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
 nav ul li{
     float: left;
+    padding: 10px;
 }
 nav ul li a {
-    display: flex;
     color: #fff;
-    padding: 14px 15px;  /* distancia de abajo-Distancia entre las palabras*/
     text-decoration: none;
-    text-align: center;
+    padding: 10px;  /* distancia de abajo-Distancia entre las palabras*/
+    font-size: 25px;
 }
 nav ul li a:hover{
     color: #ffffff;
@@ -46,26 +54,6 @@ nav ul li a:hover{
 .carrito{
     width: 21px;
     height: 21px;
-}
-/*CONTENIDO MAIN*/
-#carrousel{
-    width: 90%;
-    max-width: 120%;
-    align-items: center;
-    text-align: center;
-}
-.imag{
-    width: 300px;
-    height: 300px;
-    width: 50%;
-    padding-top: 10px;
-    border-radius: 20px 20px 20px 20px;
-}
-.container-title{
-    padding-top: 25px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    color: #222;
 }
 /*FOOTER*/
 .red-social img{
@@ -80,7 +68,6 @@ nav ul li a:hover{
     width: 100%;
     background-color: #F7BF03;
     color: #fff;
-    margin-top: 20px;
 }
 .grupo-1{
     width: 100%;
@@ -107,6 +94,13 @@ nav ul li a:hover{
     color: #efefef;
     margin-bottom: 10px;
 }
+.box ul li{
+    text-decoration: none;
+}
+.box ul li a{
+    color: white;
+    padding-bottom: 18px;
+}
 .red-social{
     display: inline-block;
     text-decoration: none;
@@ -114,13 +108,6 @@ nav ul li a:hover{
     height: 45px;
     margin-right: 10px;
     transition: all 300ms ease;
-}
-.box ul li{
-    text-decoration: none;
-}
-.box ul li a{
-    color: white;
-    padding-bottom: 18px;
 }
 .grupo-2{
     background-color: #ffd64e;
