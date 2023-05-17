@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilo_general.css">
     <link rel="stylesheet" href="Estilos/estilo_detalleCurso.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Detalle del curso</title>
 </head>
 <body>
     <header id="Inicio">
         <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.png" ></a>
     </header>
-    <nav>
+    <nav id="#navegador">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Contacto.html">Contactanos</a></li>
@@ -33,41 +34,119 @@
     <main>
         <section class="seccion-1">
             <div class="container-img">
-                <img src="Img/imgReferencia.jpg">
+                <img src="Img/cursoreferencia.jpg">
             </div>
             <div class="container-info">
                   <div class="container-title">
-                    <span>TITULO CURSO</span>
+                    <span>CURSO DE C++</span>
                   </div>
                 <div class="container-detalles-curso">
                     <div class="form-grupo">
-                        <p>Valor:</p>
-                        <p>Tiempo de dedicacion necesario:</p>
-                        <p>Descripcion del curso:</p>
-                        <p>Requisitos previos:</p>
+                        <div class="precio">
+                            <p>$11.659</p>
+                        </div>
+                        <h4>Tiempo de dedicacion necesario: 4 semanas</h4>
+                        <h4>Descripcion del curso:</h4>
+                        <p>El curso se enfocará en aprender los conceptos básicos y avanzados de C++ con Programación Modular . Un curso totalmente enfocado a estudiantes universitarios o principantes que deseen aprender programación con C++</p>
+                        <h4>Requisitos previos:</h4>
+                        <p>Para este curso es ideal tener conocimientos de pensamiento computacional o saber Python. Para mejorar tu experiencia de cursada, te aconsejamos contar con:</p>
+                            <ul>
+                            <li> PC con 6 GB de memoria RAM, procesador I3, 2.2ghz (aunque recomendados 16 GB de RAM y procesador I5, 3.2ghz para que C# pueda correr de forma ágil)</li>
+                            <li>Sistema operativo: Windows 7 o superior </li>
+
+                            </ul>
+                            
                     </div>
                     <button class="boton-inscribirse"> INSCRIBIRSE</button>
                 </div>
             <section class="seccion-1-p2">
                 <div class="conteiner-introduccion">
-                    <div class="titulo-introduccion"><h4>INTRODUCCION</h4> </div>
-                    <div class="texto-introduccion">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo hic odit minima ducimus magnam non dolore inventore, accusamus ullam temporibus quasi officia nihil ratione vel voluptatem nobis assumenda in!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas mollitia perferendis ab inventore eum unde ad assumenda eius asperiores? Quibusdam officiis totam nemo sed voluptates asperiores dolor at magnam iure.</p>
+                    <div class="titulo-introduccion"><h4>INTRODUCCION</h4> </div>    
+                    <!----CONTENIDO INTRODUCCION P1-->
+                    <div class="flecha">
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_up
+                            </span>
                     </div>
                 </div>
+                    <div class="caja-contenidos1">
+                        <div class="perfil-content">
+                        <!----icono contenido-->
+                                <span class="material-symbols-outlined">
+                                    arrow_drop_down_circle
+                                    </span>
+                        </div>
+                        <!----nombre contenidos-->
+                        <div class="name-content">
+                            <strong>INTRO- Video</strong>
+                        </div>
+                        <!---duracion contenido-->
+                        <div class="duration-content">
+                            <p>90min</p>
+                        </div>
+                    </div>
+
+                     <!----CONTENIDO INTRODUCCION P2-->
+                    <div class="caja-contenidos2">
+                        <div class="perfil-content">
+                        <!----icono contenido-->
+                        <span class="material-symbols-outlined">
+                            description
+                            </span>
+                        </div>
+                        <!----nombre contenidos-->
+                        <div class="name-content">
+                            <strong>Inicio de C++</strong>
+                        </div>
+                        <!---duracion contenido-->
+                        <div class="duration-content">
+                            <p>Lectura obligatoria</p>
+                        </div>
+                    </div>
+
+                    <!----CONTENIDO INTRODUCCION P3-->
+                    <div class="caja-contenidos3">
+                        <div class="perfil-content">
+                        <!----icono contenido-->
+                        <span class="material-symbols-outlined">
+                            assignment_turned_in
+                            </span>
+                        </div>
+                        <!----nombre contenidos-->
+                        <div class="name-content">
+                            <strong> Examen final</strong>
+                        </div>
+                        <!---duracion contenido-->
+                        <div class="duration-content">
+                            <p>60mn</p>
+                        </div>
+                    </div>
+   
+                
                 <div class="conteiner-clasuno">
                     <div class="titulo-claseuno"><h4>CLASE 1</h4></div>
+                    <div class="flecha">
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                            </span>
+                    </div>
                 </div>
                 <div class="conteiner-clasedos">
                     <div class="titulo-clasedos"><h4>CLASE 2</h4></div>
+                    <div class="flecha">
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                            </span>
+                    </div>
                 </div>
                 </div>
             </section>
         </section>
+        <!---SECCION PROFESORES-->
         <section>
             <div class="docente">
                 <div class="container-docente">
-                    <h4>DOCENTE</h4>
+                    <h4>Conoce quién enseña el Curso de C++</h4>
                  </div>
                  <div class="contiene-docentes">
                     <!---CAJA 1-->
@@ -75,61 +154,86 @@
                         <div class="caja-top">
                             <div class="perfil">
                                 <div class="perfil-img">
-                                    <img src="Img/imgReferencia.jpg" alt="">
+                                    <img src="Img/docente1.jpg" alt="docente">
+                                </div>
+                                <!----nombre y usuario-->
+                                <div class="nombre-user">
+                                    <strong>Melina Viola</strong>
+                                    <span>@meeelll</span>
                                 </div>
                             </div>
-                            <!----nombre y usuario-->
-                            <div class="nombre-user">
-                                <strong>Melina Viola</strong>
-                                <span>@meeelll</span>
-                            </div>
-                        </div>
+                                
                         <!----RESEÑAS-->
                         <div class="reseñas">
                             <div class="estrellas">
-                                <!---NO ENCUENTRO ICONOS DE ESTRELLAS QUE VAYAN CON EL TAMAÑO-->
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
                             </div>
+                        </div>
                         </div>
                         <!----COMENTARIOS-->
                         <div class="comentario">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet explicabo, accusamus, error quisquam tenetur eius consequatur, maiores nam necessitatibus omnis illum soluta dicta illo voluptatem iste? Eius, at iure!</p>
+                            <p>Ingeniera en Sistemas Computacionales Titulado. Amplia experiencia dando clases. Explicaba de una manera sencilla de comprender, todo en un lenguaje claro y sencillo y utilizando ejemplos fáciles de digerir y recordar, utilizando técnicas como el aprendizaje significativo.</p>
+                            <ul>
+                                <li><strong>Enseña: </strong>Javascript - C++ - Python</li>
+                                <li><strong>Estudios y diploma: </strong>Ingeniera en sistemas computacionales</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="docente-caja-2">
+                    <!----CAJA 2-->
+                    <div class="docente-caja">
                         <div class="caja-top">
                             <div class="perfil">
                                 <div class="perfil-img">
-                                    <img src="Img/imgReferencia.jpg" alt="">
+                                    <img src="Img/docente2.jpg" alt="docente">
+                                </div>
+                                <!----nombre y usuario-->
+                                <div class="nombre-user">
+                                    <strong>Celeste Gomez</strong>
+                                    <span>@gomzzzc</span>
                                 </div>
                             </div>
-                            <!----nombre y usuario-->
-                            <div class="nombre-user">
-                                <strong>Celeste Gomez</strong>
-                                <span>@mcelesss</span>
-                            </div>
-                        </div>
+                                
                         <!----RESEÑAS-->
                         <div class="reseñas">
                             <div class="estrellas">
-                                <!---NO ENCUENTRO ICONOS DE ESTRELLAS QUE VAYAN CON EL TAMAÑO-->
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
+                                <span class="material-symbols-outlined"> star</span>
                             </div>
+                        </div>
                         </div>
                         <!----COMENTARIOS-->
                         <div class="comentario">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam amet explicabo, accusamus, error quisquam tenetur eius consequatur, maiores nam necessitatibus omnis illum soluta dicta illo voluptatem iste? Eius, at iure!</p>
+                            <p>Profesional de la carrera de diseño en videojuegos, egresada de la misma y empleada en rubro de diseño y creación de entornos y mundos 3D.
+                                logrando llevar actividades de investigación y auto alimentación de conocimientos generales y globales de los temas correspondientes .</p>
+                            <ul>
+                                <li><strong>Enseña: </strong>Unity - C++ - Diseño3D</li>
+                                <li><strong>Estudios y diploma: </strong>Diseño en videojuegos</li>
+                            </ul>
                         </div>
                     </div>
+                  
+                    </div>
+              
+            </div>
         </section>
-        <section>
+        <section class="cursos-relacionados">
             <div class="contiene-cursos-rela">
                 <h2>Cusos relacionados</h2>
+              
                 <div class="card-list-cursos">
                     <div class="card">
                         <div class="card-img">
-                            <img src="Img/imgReferencia.jpg" alt="modelo1">
+                            <img src="Img/curso1.jpg" alt="JAVA">
                         </div>
                         <div class="text-curso">
-                            <h3>Java- cursito one</h3>
+                            <h3>Java- curso inicial</h3>
                             <p class="categoria">
                                Ver detalle
                             </p>
@@ -137,10 +241,10 @@
                     </div>
                     <div class="card">
                         <div class="card-img">
-                            <img src="Img/imgReferencia.jpg" alt="modelo2">
+                            <img src="Img/curso2.jpg" alt="CSS">
                         </div>
                         <div class="text-curso">
-                            <h3>CSS- cursito two</h3>
+                            <h3>CSS- curso inicial</h3>
                             <p class="categoria">
                                 Ver detalle
                             </p>
@@ -148,10 +252,10 @@
                     </div>
                     <div class="card">
                         <div class="card-img">
-                            <img src="Img/imgReferencia.jpg" alt="modelo3">
+                            <img src="Img/curso3.jpg" alt="HTML">
                         </div>
                         <div class="text-curso">
-                            <h3>HTML- cursito three</h3>
+                            <h3>HTML- curso inicial</h3>
                             <p class="categoria">
                                Ver detalle
                             </p>
@@ -159,10 +263,10 @@
                     </div>
                     <div class="card">
                         <div class="card-img">
-                            <img src="Img/imgReferencia.jpg" alt="modelo3">
+                            <img src="Img/curso4.jpg" alt="JAVASCRIPT">
                         </div>
                         <div class="text-curso">
-                            <h3>JAVASCRIPT- cursito four</h3>
+                            <h3>JAVASCRIPT- curso inicial</h3>
                             <p class="categoria">
                                Ver detalle
                             </p>
@@ -197,10 +301,10 @@
             <h4>SIGUENOS</h4>
             <div class="red-social">
                 <a href="https://www.unlam.edu.ar/">
-                    <img src="Img/𝔸𝕡𝕡𝕤 𝕀𝕔𝕠𝕟𝕤.jfif" alt="facebook">
+                    <img src="Img/a547e34f879e49740f956f034715a530-removebg-preview.png" alt="facebook">
                 </a>
                 <a href="https://www.unlam.edu.ar/">
-                    <img src="Img/Iconos gratuitos de Instagram diseñados por Freepik.png" alt="Instagram">
+                    <img src="Img/318bf8c3191bb2b9013e10e446e9156d-removebg-preview.png" alt="Instagram">
                 </a>
                 <a href="https://www.unlam.edu.ar/">
                     <img src="Img/Iconos gratuitos de Gorjeo diseñados por Freepik.png" alt="Twitter">

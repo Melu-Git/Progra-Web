@@ -3,6 +3,10 @@ main{
 }
 
 /*CONTENIDO MAIN*/
+main{
+    background-color: #d9c6a6;
+    border-radius: 20px 20px 20px 20px;
+}
 #contenido-principal{
     float: left;
     width: 1250px;

@@ -7,6 +7,9 @@ body{
     background-color: bisque;
 }
 main{
+   
+     background-color: #d9c6a6;
+     border-radius: 20px 20px 20px 20px;
     height: 100vh;
 }
 #back a{
