@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalendarioCursos</title>
-    <link rel="stylesheet" href="Estilos/estilo.css">
-    <link rel="stylesheet" href="Estilos/calendario.css">
+    <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estilo_calendario.css">
+    <title>Calendario</title>
 </head>
-<header id="Inicio">
-    <h1><img class="logo" src="Img/CELESTINA.jpg"> </h1>
-    <!--BARRA DE BUSQUEDA-->
-        <form action="../../form-result.html" method="post" > 
-            <p>
-                <input type="search" name="Busqueda" placeholder="Buscar"> 
-                <input type="submit" value="Buscar">
-            </p>
-        </form>
-    <img class="carrito" src="Img/Iconos gratuitos de Carrito De Compras diseñados por Freepik.png" alt="carrito">
-    <!--CARRITO DE COMPRAS-->
-</header>
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Contacto.html">Contactanos</a></li>
-        <li><a href="Calendario.html">Calendario</a></li>
-        <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-        <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
-        <li><a href="Personalización.html">Gift Cards</a></li>
-    </ul>
-</nav>
-<body class="calendario-body">
+
+<body>
+    <header id="Inicio">
+        <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.png" ></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Calendario.html">Calendario</a></li>
+            <li><a href="Detalle del curso.html">Detalles del curso</a></li>
+            <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
+            <li><a href="Personalización.html">Gift Cards</a></li>
+            <li> <!--BARRA DE BUSQUEDA-->
+            <form action="../../form-result.html" method="post" id="buscador"> 
+                <p>
+                    <input type="search" name="Busqueda" placeholder="Buscar"> 
+                    <input type="submit" value="Buscar">
+                </p>
+            </form></li>
+            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+        </ul>
+    </nav>
     <main class="contenerdor-calendario">
         <section class="mes">
             <h2 class="nombre-mes">Mayo</h2>
@@ -83,7 +83,11 @@
             <div class="calendario-dia">20</div>
             <div class="calendario-dia">21</div>
             <div class="calendario-dia">22</div>
-            <div class="calendario-dia">23</div>
+            <div class="calendario-dia">23
+                <div>
+                    <p>Nuevo curso de C++</p>
+                </div>
+            </div>
             <div class="calendario-dia">24</div>
             <div class="calendario-dia">25</div>
             <div class="calendario-dia">26</div>
@@ -99,46 +103,46 @@
         </section>
 
     </main>
-</body>
-<footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <h4>INTEGRANTES</h4>
-            <p>Gómez Celeste-45809908</p>
-            <p>Viola Melina</p>
-        </div>
-     
-        <div class="box">
-            <h4>MENU</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Contacto.html">Contactanos</a></li>
-                    <li><a href="Calendario.html">Calendario</a></li>
-                    <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-                    <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
-                    <li><a href="Personalización.html">Gift Cards</a></li>
-                </ul>
-        </div>
-    
-        <div class="box">
-            <h4>SIGUENOS</h4>
-            <div class="red-social">
-                <a href="https://www.unlam.edu.ar/">
-                    <img src="Img/𝔸𝕡𝕡𝕤 𝕀𝕔𝕠𝕟𝕤.jfif" alt="facebook">
-                </a>
-                <a href="https://www.unlam.edu.ar/">
-                    <img src="Img/Iconos gratuitos de Instagram diseñados por Freepik.png" alt="Instagram">
-                </a>
-                <a href="https://www.unlam.edu.ar/">
-                    <img src="Img/Iconos gratuitos de Gorjeo diseñados por Freepik.png" alt="Twitter">
-                </a>  
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h4>INTEGRANTES</h4>
+                <p>Gómez Celeste-45809908</p>
+                <p>Viola Melina-44163024</p>
+            </div>
+         
+            <div class="box">
+                <h4>MENU</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Contacto.html">Contactanos</a></li>
+                        <li><a href="Calendario.html">Calendario</a></li>
+                        <li><a href="Detalle del curso.html">Detalles del curso</a></li>
+                        <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
+                        <li><a href="Personalización.html">Gift Cards</a></li>
+                    </ul>
+            </div>
+        
+            <div class="box">
+                <h4>SIGUENOS</h4>
+                <div class="red-social">
+                    <a href="https://www.unlam.edu.ar/">
+                        <img src="Img/a547e34f879e49740f956f034715a530-removebg-preview.png" alt="facebook">
+                    </a>
+                    <a href="https://www.unlam.edu.ar/">
+                        <img src="Img/318bf8c3191bb2b9013e10e446e9156d-removebg-preview.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.unlam.edu.ar/">
+                        <img src="Img/Iconos gratuitos de Gorjeo diseñados por Freepik.png" alt="Twitter">
+                    </a>  
+                </div>
             </div>
         </div>
-    </div>
-    
-   <div class="grupo-2">
-       <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
-    </div>
-   
-</footer>
+        
+       <div class="grupo-2">
+           <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
+        </div>
+       
+    </footer>
+</body>
 </html>

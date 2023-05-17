@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/*EMCABEZADO*/
+header{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ffd64e
+    /* #f1e294*/
+}
+#logo-principal{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+/*MENU INICIO*/
+nav{
+    border-top: 3px solid #77746f;
+    border-bottom: 3px solid #77746f;
+    background-color:#F7BF03;
+}
+nav ul{
+    /* marco del menu*/
+    list-style: none;
+    margin: 0;
+    padding: auto;
+    width: auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+nav ul li{
+    
+    padding: 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;  /* distancia de abajo-Distancia entre las palabras*/
+    font-size: 25px;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    background-color: #c5a22d;
+}
+.carrito{
+    width: 21px;
+    height: 21px;
+}
+/*FOOTER*/
+.red-social img{
+    width:30px;
+    height: 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.pie-pagina{
+    position: absolute;
+    width: 100%;
+    background-color: #F7BF03;
+    color: #fff;
+}
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 25px 0px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.box h4{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.box ul li{
+    text-decoration: none;
+}
+.box ul li a{
+    color: white;
+    padding-bottom: 18px;
+}
+.red-social{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+.grupo-2{
+    background-color: #ffd64e;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+.grupo-2 small{
+    font-size: 15px;
+}
+@media screen and(max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 0px;
+    }
+}
