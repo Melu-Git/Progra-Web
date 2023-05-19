@@ -35,7 +35,7 @@ a:link{
     padding-right: 10px;
     padding-bottom: 60px;
     position: absolute;
-    background-color: #f1e294;
+    background-color:  #ffebcd;
     transform: translate(-45%, 17.5%); /*izq-der// arriba-abajo*/
     border-radius: 10px 10px 10px 10px;
 }
@@ -48,7 +48,7 @@ a:link{
     height: 100px;
 }
 #section-contact{
-    background-color: #f1e294;
+    background-color:  #ffebcd;
     width: 600px;
     position: absolute ;
     left: 53%;
@@ -59,7 +59,7 @@ a:link{
     width: 100%;
     overflow: hidden;
     border-radius: 10px 10px 10px 10px;
-    background-color: #f1e294;
+    background-color: #ffebcd;
 }
 .header span{
     font-size: 100px;
@@ -98,7 +98,7 @@ button{
     color: #c5a22d;
     font-size: large;
     border-style: double;
-    background-color: #f1e294;
+    background-color:  #ffebcd;
     border-radius: 10px 10px 10px 10px;
 }
 button:hover{
