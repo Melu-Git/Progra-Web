@@ -1,0 +1,118 @@
+.titulo-gift h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    }
+    /*DIV DE IMAGNES**/
+    .elementos-color {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content:flex-start;
+        padding: 0%;
+    }
+    .elementos-color img{
+        border-radius:50%;
+        margin-right: 62px;
+        width: 60px;
+        height: 60px;
+    }
+    .elementos-color input{
+        margin-left: 25px;
+        margin-right: 85px;
+    }
+    .elemetos-ubicacion{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content:flex-start;
+        padding: 0%;
+    }
+    .elemetos-ubicacion img{
+        width: 60px;
+        height: 60px;
+        margin-right: 63px;
+        border: 1px solid #000;
+    }
+    .elemetos-ubicacion input{
+        margin-left: 25px;
+        margin-right: 85px;
+    }
+    .elementos-letra{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content:flex-start;
+        padding: 0%;
+    }
+    .elementos-letra input{
+        margin-left: 25px;
+        margin-right: 85px;
+    }
+    .elementos-letra p{
+        margin-right: 98px;
+    }
+    
+    .seccion1{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 50px;
+        padding-right: 100px;
+        padding-left: 60px;
+    }
+    .container-info{
+        flex: 1;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-title h4{
+        font-size: 20px;
+        font-weight: 300;
+        padding-left: 0;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: #252525;
+        
+    }
+    /*IRIA LA GIFT*/
+    .container-img{
+        padding-top: 25px;
+    }
+    .container-img img{
+        width: 500px; 
+        height: 550px;
+        padding-left: 100px;   
+    }
+    article{
+        justify-content: flex-start;
+
+    }
+    form{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    form label{
+        font-size: 20px;
+        margin-right: 5px;
+        color: #252525;
+    }
+    .boton-inscribirse{
+    border: none;
+    background-color: #F7BF03;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.boton-inscribirse:hover{
+    background-color: #252525;
+    
+}

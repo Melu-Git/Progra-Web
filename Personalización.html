@@ -21,16 +21,22 @@
             <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
             <li><a href="Personalización.html">Gift Cards</a></li>
             <li> <!--BARRA DE BUSQUEDA-->
-            <form action="../../form-result.html" method="post" id="buscador"> 
-                <p>
-                    <input type="search" name="Busqueda" placeholder="Buscar"> 
-                    <input type="submit" value="Buscar">
-                </p>
-            </form></li>
+            <form action="#" method="post" >
+                <datalist id="buscadorcursos">
+                    <option value="HTML"></option>
+                    <option value="JavaScript"></option>
+                    <option value="CSS"></option>
+                    <option value="Java"></option>
+                    <option value="C++"></option>
+                </datalist>
+                <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
+                <input type="submit" value="Buscar" class="lupa">
+            </form>
+        </li>
             <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
         </ul>
     </nav>
-    <main>
+   <!---- <main>
         <div class="imagengift">
             <img src="Img/gift2.jpg" alt="Gift Card">
         </div>
@@ -58,47 +64,164 @@
         </div>
 
     </main>
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <h4>INTEGRANTES</h4>
-                <p>Gómez Celeste-45809908</p>
-                <p>Viola Melina-44163024</p>
+    
+       -->
+       <main>
+        <section class="seccion1">
+            <div class="container-img">
+               <img src="Img/gift2.jpg" alt="giftcard">
             </div>
-         
-            <div class="box">
-                <h4>MENU</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="Contacto.html">Contactanos</a></li>
-                        <li><a href="Calendario.html">Calendario</a></li>
-                        <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-                        <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
-                        <li><a href="Personalización.html">Gift Cards</a></li>
-                    </ul>
-            </div>
-        
-            <div class="box">
-                <h4>SIGUENOS</h4>
-                <div class="red-social">
-                    <a href="https://www.unlam.edu.ar/">
-                        <img src="Img/a547e34f879e49740f956f034715a530-removebg-preview.png" alt="facebook">
-                    </a>
-                    <a href="https://www.unlam.edu.ar/">
-                        <img src="Img/318bf8c3191bb2b9013e10e446e9156d-removebg-preview.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.unlam.edu.ar/">
-                        <img src="Img/Iconos gratuitos de Gorjeo diseñados por Freepik.png" alt="Twitter">
-                    </a>  
+           
+            <div class="container-info">
+                <div class="titulo-gift">
+                    <h2>Personalización de giftcard</h2>
                 </div>
-            </div>
-        </div>
-        
-       <div class="grupo-2">
-           <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
+                <!-----color-->
+                <div class="container-title">
+                  <h4>Color:</h4>
+                </div>
+           
+            <div class="container-detalle-personalizacion">
+       <div class="espacio">
+        <ul class="elementos-color">
+            <li><img src="Img/1.jpg" alt="colo1"></li>
+        <li><img src="Img/2.jpg" alt="color2"></li>
+        <li><img src="Img/3.jpg" alt="color3"></li>
+        <li><img src="Img/4.jpg" alt="color4"></li>
+        <li><img src="Img/5.jpg" alt="color5"></li>
+        </ul>
+    
+        <ul class="elementos-color">
+            <li><input type="radio" name="color-elegido" id="color1" value="color1"></li>
+            <li><input type="radio" name="color-elegido" id="color2" value="color2"></li>
+            <li><input type="radio" name="color-elegido" id="color3" value="color3" checked></li>
+            <li><input type="radio" name="color-elegido" id="color4" value="color4"></li>
+            <li><input type="radio" name="color-elegido" id="color5" value="color5"></li>
+        </ul>
+       </div>
+    
+       <article>
+        <form action="#" method="post">
+            <label for="nombredestinatario">Nombre Destinatario</label>
+            <input type="text" name="nombredestinatario" id="nombredestinatario" placeholder="Ron Weasley">
+        </form>
+        <form action="#" method="post">
+            <label for="nombreingresante">De parte de:</label>
+            <input type="text" name="nombreingresante" id="nombreingresante" placeholder="Hermione Granger">
+        </form>
+    </article>
+    
+       <div class="container-title">
+        <h4>Tamaño:</h4>
+      </div>
+     <div class="espacio">
+        <div class="elementos-letra">
+            <p>20px</p>
+            <p>28px</p>
+            <p>32px</p>
+            <p>40px</p>
+            <p>60px</p>
         </div>
        
-    </footer>
+        <ul class="elementos-letra">
+            <li><input type="radio" name="letra-elegida" id="20" value="20"> </li>
+            <li><input type="radio" name="letra-elegida" id="28" value="28" checked> </li>
+            <li><input type="radio" name="letra-elegida" id="32" value="32"> </li>
+            <li><input type="radio" name="letra-elegida" id="40" value="40"> </li>
+            <li><input type="radio" name="letra-elegida" id="60" value="60"> </li>
+        </ul>
+     </div>
+     
+     <article>
+        <form action="">
+            <label for="">Monto $</label>
+            <input type="text" name="monto" id="monto" placeholder="10.000">
+        </form>
+    </article>
+     <div class="container-title">
+        <h4>Ubicacion:</h4>
+      </div>
+     <div class="espacio">
+    <ul class="elemetos-ubicacion">
+    <li><img src="Img/ubicacin1.png" alt="ub1"></li>
+    <li><img src="Img/ubicacion2.png" alt="ub2"></li>
+    <li><img src="Img/ubicacion3.png" alt="ub3"></li>
+    </ul>
+    
+    <ul class="elemetos-ubicacion">
+        <li><input type="radio" name="ubicacion-elegida" id="left" value="left"></li>
+        <li><input type="radio" name="ubicacion-elegida" id="center" value="center" checked></li>
+        <li><input type="radio" name="ubicacion-elegida" id="right" value="right"></li>
+    </ul>
+     </div>
+     <div class="container-title">
+        <h4>Fondo:</h4>
+      </div>
+     <div class="espacio">
+        <ul class="elemetos-ubicacion">
+        <li><img src="Img/fondo1.jpg" alt="fondo1"></li>
+        <li><img src="Img/fondo2.jpg" alt="fondo2"></li>
+        <li><img src="Img/fondo3.jpg" alt="fondo3"></li>
+        <li><img src="Img/fondo4.jpg" alt="fondo4"></li>
+        <li><img src="Img/fondo5.jpg" alt="fondo5"></li>
+        </ul>
+        
+        <ul class="elemetos-ubicacion">
+            <li><input type="radio" name="fondo-elegido" id="1" value="1" checked></li>
+            <li><input type="radio" name="fondo-elegido" id="2" value="2"></li>
+            <li><input type="radio" name="fondo-elegido" id="3" value="3"></li>
+            <li><input type="radio" name="fondo-elegido" id="4" value="4"></li>
+            <li><input type="radio" name="fondo-elegido" id="5" value="5"></li>
+        </ul>
+         </div>
+    </div>
+    <button class="boton-inscribirse"> Confirmar</button>
+    </div>
+    </section>
+    
+       </main>
+   <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <h4>INTEGRANTES</h4>
+            <p>Gómez Celeste- 45809908</p>
+            <p>Sleiman Yamila- 43316917</p>
+            <p>Viola Melina- 44163024</p>
+        </div>
+     
+        <div class="box">
+            <h4>MENU</h4>
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contacto.html">Contactanos</a></li>
+                    <li><a href="Calendario.html">Calendario</a></li>
+                    <li><a href="Detalle del curso.html">Detalles del curso</a></li>
+                    <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
+                    <li><a href="Personalización.html">Gift Cards</a></li>
+                </ul>
+        </div>
+    
+        <div class="box">
+            <h4>SIGUENOS</h4>
+            <div class="red-social">
+                <a href="https://www.unlam.edu.ar/">
+                    <img src="Img/a547e34f879e49740f956f034715a530-removebg-preview.png" alt="facebook">
+                </a>
+                <a href="https://www.unlam.edu.ar/">
+                    <img src="Img/318bf8c3191bb2b9013e10e446e9156d-removebg-preview.png" alt="Instagram">
+                </a>
+                <a href="https://www.unlam.edu.ar/">
+                    <img src="Img/Iconos gratuitos de Gorjeo diseñados por Freepik.png" alt="Twitter">
+                </a>  
+            </div>
+        </div>
+    </div>
+    
+   <div class="grupo-2">
+       <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
+    </div>
+   
+   </footer>
 </body>
 </html>
     
