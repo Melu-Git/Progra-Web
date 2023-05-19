@@ -7,3 +7,39 @@ main{
     height: 90vh;
     background-color: #d9c6a6;
 }
+.formformulario{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 18px 0px;
+}
+.inputformulario{
+    border-radius: 28px;
+    padding: 8px 20px 0px 0px;
+    border: 1px solid #d0d0d0;
+   width: 20%;
+}
+
+.buttonformulario{
+    border: none;
+    background-color: #F7BF03;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 0px 0px 87px;
+}
+p{
+    margin: 11px 20px 6px 20px;
+}
+.inscri{
+    width: 10%;
+}
+.monto{
+    background-color: beige;
+}

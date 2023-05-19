@@ -4,7 +4,7 @@
 
 /*CONTENIDO MAIN*/
 main{
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -26,6 +26,7 @@ main{
 .imag{
     width: 50%;
     height: 300px;
+    margin: 0px 0 20px 0;
     padding-top: 10px;
     border-radius: 30px 30px 30px 30px;
     text-align: center;
