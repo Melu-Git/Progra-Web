@@ -2,14 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: bisque;
+    text-align: center;
 }
 main{
-   
-     background-color: #d9c6a6;
-     border-radius: 20px 20px 20px 20px;
+    background-color: #d9c6a6;
     height: 100vh;
 }
 #back a{
@@ -19,7 +15,7 @@ main{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 10px;
-    background-color: #f1e294;
+   
     transform: translate(-50%, 15%);
     border-radius: 10px 10px 10px 10px;
     border: 1px solid black;
@@ -40,7 +36,7 @@ a:link{
     padding-bottom: 60px;
     position: absolute;
     background-color: #f1e294;
-    transform: translate(-45%, 15%); /*izq-der// arriba-abajo*/
+    transform: translate(-45%, 17.5%); /*izq-der// arriba-abajo*/
     border-radius: 10px 10px 10px 10px;
 }
 #mapa h3{
@@ -59,12 +55,13 @@ a:link{
     transform: translate(-10%, 10%);
     border-radius: 10px 10px 10px 10px;
 }
-header{
+.header{
     width: 100%;
     overflow: hidden;
     border-radius: 10px 10px 10px 10px;
+    background-color: #f1e294;
 }
-header span{
+.header span{
     font-size: 100px;
     display: block;
     text-align: center;
