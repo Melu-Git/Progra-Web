@@ -13,9 +13,9 @@ header{
     background-color: #f3cf59;
     /* #f1e294*/
 }
-main{
+/*main{
     background-color: #d9c6a6;
-}
+}*/
 #logo-principal{
     width: 200px;
     height: 200px;
@@ -28,6 +28,7 @@ nav{
     border-top: 3px solid #77746f;
     border-bottom: 3px solid #77746f;
     background-color:#F7BF03;
+    
 }
 nav ul{
     /* marco del menu*/
