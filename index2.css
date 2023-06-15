@@ -164,7 +164,7 @@ h2{
     font-size: 20px;
     background-color: #3E0169;
     box-shadow: 0 15px 15px #000000;
-    
+    letter-spacing: 4px;
     font-family: 'Press Start 2P', cursive;
     color: white;
 }
@@ -174,9 +174,8 @@ h2{
     gap: 10px;
     padding: 20px; 
 }
-.card{
-    cursor: pointer;
-}
+
+
 .card-img{
 background: transparent;
 margin-bottom: 15px;
@@ -189,21 +188,90 @@ object-fit: cover;
 box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 width: 280px
 }
-.text-curso{
-    color: white;
-    font-size: 15px;
-    justify-content: space-between;
+.text-curso h3{
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1px;
 }
-.categoria{
+
+/* BOTON VER MAS SOBRE EL CURSO*/
+#ver_curso{
+    border: none;
+    background: rgb(110,34,188);
+    background: linear-gradient(90deg, rgba(110,34,188,1) 0%, rgba(54,29,119,1) 35%, rgba(0,0,0,1) 100%);
     color: white;
-    font-weight: 200;
-    line-height: 1.4;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    display: block;
+  padding: 0.7rem 1rem;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+#ver_curso:hover{
+        background: rgb(6,4,17);
+        background: linear-gradient(90deg, rgba(6,4,17,1) 7%, rgba(150,139,221,1) 76%);
+        
+}
+/* BOTON OCULTAR CURSOS*/
+#card-list-cursos2 #boton_ocultar{
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s;
+    background: black;
+    box-shadow: 0 0 15px #3E0169, 0 0 40px #3E0169;
+    margin-top: 30px;
+    justify-content: center;
+    display: block;
+    margin: 0 auto; 
+}
+#card-list-cursos2 #boton_ocultar:hover{
+    background: #3E0169;
+    box-shadow: 0 0 10px #3E0169, 0 0 40px #3E0169, 0 0 80px #3E0169 ;
+    
+}
+/* BOTON VER MAS CURSOS*/
+.boton_mas_cursos button{
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s;
+    background: black;
+    box-shadow: 0 0 15px #3E0169, 0 0 40px #3E0169;
+    margin-top: 30px;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
 
 }
-.categoria:hover{
-    color: blue;
-    text-decoration: underline;
+.boton_mas_cursos button:hover{
+    background: #3E0169;
+    box-shadow: 0 0 10px #3E0169, 0 0 40px #3E0169, 0 0 80px #3E0169 ;
+   
 }
+/*ESTILO IMAGENES CURSOS AGREGADOS*/
+#card-list-cursos2{
+    display: none;
+   grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px; 
+}
+
 /*ESTILO PAGO*/
 .Pagos_destacados{
     text-align: center;
