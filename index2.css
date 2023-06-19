@@ -1,4 +1,4 @@
-.promo{
+.container-main{
     padding-top: 80px;
     display: flex;
     flex-direction: column;
@@ -9,32 +9,288 @@
     position: relative;
     z-index: 2;
 }
-#hero{
-    min-height: 100vh;
+#main{
+    min-height: 120vh;
     position: relative;
 }
-video{
-    position: absolute;
+
+.capa{
+    background-image: url('Img/Fondo.png');
+    background-size: cover;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-.capa{
+    z-index: -1;
+
+    /* Prueba
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: #1c1c1d;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
+    opacity: 0.9;
+    mix-blend-mode: screen;
+    
+    #fondo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    */
 }
 
-/*
 
-.baner{
+/* ESTILO CARROUSEL*/
+.carousel {
+    width: 60%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+   
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+  .carousel img.active {
+    opacity: 1;
+  }
+
+/*ESTILO CURSOS*/
+.Cursos_destacados{
+    justify-content: center;
+    margin-top: 45px;
+}
+
+h2{
+    width: 70em;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-top: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    background-color: #3E0169;
+    box-shadow: 0 15px 15px #000000;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+}
+.card-list-cursos{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translate(0% , 0%);
+    gap: 50px;
+    padding: 20px; 
+}
+.card-img{
+    background: transparent;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.card-img img{
+height: 400px;
+object-fit: cover;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+width: 280px
+}
+.text-curso h3{
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+/* BOTON VER MAS SOBRE EL CURSO*/
+#ver_curso{
+    border: none;
+    background: rgb(110,34,188);
+    background: linear-gradient(90deg, rgba(110,34,188,1) 0%, rgba(54,29,119,1) 35%, rgba(0,0,0,1) 100%);
+    color: white;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    display: block;
+    padding: 0.7rem 1rem;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#ver_curso:hover{
+        background: rgb(6,4,17);
+        background: linear-gradient(90deg, rgba(6,4,17,1) 7%, rgba(150,139,221,1) 76%);
+        
+}
+
+/* BOTON OCULTAR CURSOS*/
+ #boton_ocultar{
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s;
+    background: black;
+    box-shadow: 0 0 15px #3E0169, 0 0 40px #3E0169;
+    margin-top: 30px;
+    justify-content: center;
+    transform: translate(105% , 0%);
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto; 
+}
+#card-list-cursos2 #boton_ocultar:hover{
+    background: #3E0169;
+    box-shadow: 0 0 10px #3E0169, 0 0 40px #3E0169, 0 0 80px #3E0169 ;
+    
+}
+
+/* BOTON VER MAS CURSOS*/
+.boton_mas_cursos button{
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-top: 30px;
+    transition: 0.2s;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    background: black;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0 15px #3E0169, 0 0 40px #3E0169;
+
+}
+.boton_mas_cursos button:hover{
+    background: #3E0169;
+    box-shadow: 0 0 10px #3E0169, 0 0 40px #3E0169, 0 0 80px #3E0169 ;
+   
+}
+
+/*ESTILO IMAGENES CURSOS AGREGADOS*/
+#card-list-cursos2{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translate(0% , 0%);
+    gap: 10px;
+    margin-top: 20px;
+   
+}
+
+/*ESTILO PAGO*/
+.Pagos_destacados{
+    text-align: center;
+    margin-top: 45px;
+}
+.card-list-pagos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.pagos{
+    cursor: pointer;
+}
+.pagos-img{
+    background: transparent;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.pagos-img img{
+    height: 200px;
+    object-fit: cover;
+    width: 280px;
+}
+.text-pagos{
+    color: white;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.categoria{
+    color: white;
+    font-weight: 200;
+    line-height: 1.4;
+
+}
+.categoria:hover{
+    color: blue;
+    text-decoration: underline;
+}
+/*.contendor_carrousel{
+   width: 90%;
+   max-width:900px ; 
+   margin: auto;
+   overflow: hidden;
+   /*box-shadow:0 0 0 5px #0c0c0c,
+   0 15px 50px ;
+   box-shadow: 0 15px 15px #000000;
+   position: relative;
+}
+.carrousel{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+.carrousel_section{
+    width: 100%;
+}
+.carrousel_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carrousel_btn{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    background: rgba(16, 15, 15, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.carrousel_btn:hover{
+    background-color: white;
+    color: #3E0169;
+}
+.carrousel_btn_left{
+    left: 10px;
+}
+.carrousel_btn_right{
+        right: 10px;
+} */
+/*.baner{
     width: 90%;
     height: 400px;
     background-color: red;
@@ -96,165 +352,3 @@ opacity: 20%;
 .carrousel_indicadores .glider-dot.active{
     opacity: .1;
 }*/
-
-/* ESTILO CARROUSEL*/
-.contendor_carrousel{
-   width: 90%;
-   max-width:900px ; 
-   margin: auto;
-   overflow: hidden;
-   /*box-shadow:0 0 0 5px #0c0c0c,
-   0 15px 50px ;*/
-   box-shadow: 0 15px 15px #000000;
-   position: relative;
-   
-}
-.carrousel{
-    display: flex;
-    width: 400%;
-    height: 400px;
-    margin-left: -100%;
-}
-.carrousel_section{
-    width: 100%;
-}
-.carrousel_img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.carrousel_btn{
-    position: absolute;
-    width: 30px;
-    height: 25px;
-    background: rgba(16, 15, 15, 0.7);
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    cursor: pointer;
-    
-}
-.carrousel_btn:hover{
-    background-color: white;
-    color: #3E0169;
-}
-.carrousel_btn_left{
-    left: 10px;
-}
-.carrousel_btn_right{
-        right: 10px;
-}
-
-/*ESTILO CURSOS*/
-.Cursos_destacados{
-    text-align: center;
-    margin-top: 45px;
-}
-
-h2{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    background-color: #3E0169;
-    box-shadow: 0 15px 15px #000000;
-    
-    font-family: 'Press Start 2P', cursive;
-    color: white;
-}
-.card-list-cursos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px; 
-}
-.card{
-    cursor: pointer;
-}
-.card-img{
-background: transparent;
-margin-bottom: 15px;
-padding-right: 15px;
-padding-left: 15px;
-}
-.card-img img{
-height: 400px;
-object-fit: cover;
-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-width: 280px
-}
-.text-curso{
-    color: white;
-    font-size: 15px;
-    justify-content: space-between;
-}
-.categoria{
-    color: white;
-    font-weight: 200;
-    line-height: 1.4;
-
-}
-.categoria:hover{
-    color: blue;
-    text-decoration: underline;
-}
-/*ESTILO PAGO*/
-.Pagos_destacados{
-    text-align: center;
-    margin-top: 45px;
-}
-
-h2{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    background-color: #3E0169;
-    box-shadow: 0 15px 15px #000000;
-    
-    font-family: 'Press Start 2P', cursive;
-    color: white;
-}
-.card-list-pagos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
-    
-}
-.pagos{
-    cursor: pointer;
-}
-.pagos-img{
-background: transparent;
-padding-right: 15px;
-padding-left: 15px;
-}
-.pagos-img img{
-height: 200px;
-object-fit: cover;
-width: 280px;
-}
-.text-pagos{
-    color: white;
-    font-size: 15px;
-    justify-content: space-between;
-}
-.categoria{
-    color: white;
-    font-weight: 200;
-    line-height: 1.4;
-
-}
-.categoria:hover{
-    color: blue;
-    text-decoration: underline;
-}

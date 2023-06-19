@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="Estilos/estilo_general.css">
-    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="Estilos/index2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,47 +14,53 @@
     <title>Celestina - Página de Inicio</title>
 </head>
 <body>
-    <header id="Inicio">
-        <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.png" ></a>
+    <header id="Inicio" class="header">
+        <div class="container-header">
+            <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.jpg" ></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contacto.html">Contactanos</a></li>
+                    <li><a href="Calendario.html">Calendario</a></li>
+                    <li><a href="Detalle del curso.html">Detalles del curso</a></li>
+                    <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
+                    <li><a href="Personalización.html">Gift Cards</a></li>
+                    <li> <!--BARRA DE BUSQUEDA-->
+                        <form action="#" method="post" >
+                            <datalist id="buscadorcursos">
+                                <option value="HTML"></option>
+                                <option value="JavaScript"></option>
+                                <option value="CSS"></option>
+                                <option value="Java"></option>
+                                <option value="C++"></option>
+                            </datalist>
+                            <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
+                            <input type="submit" value="Buscar" class="lupa">
+                        </form>
+                    </li>
+                    <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Contacto.html">Contactanos</a></li>
-            <li><a href="Calendario.html">Calendario</a></li>
-            <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-            <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
-            <li><a href="Personalización.html">Gift Cards</a></li>
-            <li> <!--BARRA DE BUSQUEDA-->
-                <form action="#" method="post" >
-                    <datalist id="buscadorcursos">
-                        <option value="HTML"></option>
-                        <option value="JavaScript"></option>
-                        <option value="CSS"></option>
-                        <option value="Java"></option>
-                        <option value="C++"></option>
-                    </datalist>
-                    <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
-                    <input type="submit" value="Buscar" class="lupa">
-                </form>
-            </li>
-            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
-        </ul>
-    </nav>
+   
     <!--CONTENIDO PRINCIPAL-->
     
-    <main id="hero">
-        <div class="promo">
+    <video autoplay muted loop id="fondo">
+        <source src="Img/video.mp4" type="video/mp4">
+      </video>
+    <main id="main">
+        <div class="container-main">
             <!---PROMO: Cotiene el contenido que va arriba del video-->
      <!--<div class="baner">
         <img src="Img/learn.png" alt="prueba" id="imagen_banner">
     </div>-->
-            <div class="contendor_carrousel">
+            <!--<div class="contendor_carrousel">
                 <div class="carrousel" id="carrousel">
-                    <div class="carrousel_section"> <img src="Img/learn.png" alt="" class="carrousel_img"></div>
-                    <div class="carrousel_section"> <img src="Img/learn.png" alt="" class="carrousel_img"></div>
-                    <div class="carrousel_section"> <img src="Img/learn.png" alt="" class="carrousel_img"></div>
-                    <div class="carrousel_section"> <img src="Img/learn.png" alt="" class="carrousel_img"></div>
+                    <div class="carrousel_section"> <img src="Img/banner1 (1).jpg" alt="" class="carrousel_img"></div>
+                    <div class="carrousel_section"> <img src="Img/banner1 (2).jpg" alt="" class="carrousel_img"></div>
+                    <div class="carrousel_section"> <img src="Img/banner1 (3).jpg" alt="" class="carrousel_img"></div>
+                    <div class="carrousel_section"> <img src="Img/banner1 (4).jpg" alt="" class="carrousel_img"></div>
                 </div>
                 <!--<div class="carrousel_btn">
                     <div class="btn_left">
@@ -71,52 +77,101 @@
                         </div>
                     </div>
                     </div>
-                -->
-                <div class="carrousel_btn carrousel_btn_right" id="btn_right">&#62;</div>
-                <div class="carrousel_btn carrousel_btn_left" id="">&#60;</div>
+                    <div class="carrousel_btn carrousel_btn_right" id="btn_right">&#62;</div>
+                    <div class="carrousel_btn carrousel_btn_left" id="">&#60;</div>
+                    
+                </div>
+            -->
 
-            </div>
+            <!--CARROUSEL NUEVO-->
+            <div class="carousel">
+                <img src="Img/banner1 (1).jpg" alt="Imagen 1" loading="eager" id="img1">
+                <img src="Img/banner1 (2).jpg" alt="Imagen 2">
+                <img src="Img/banner1 (3).jpg" alt="Imagen 3">
+                <img src="Img/banner1 (4).jpg" alt="Imagen 4">
+              </div>
 
             <div id="Cursos_destacados">
-                <h2>CURSOS DESTACADOS</h2>
-                <div class="card-list-cursos">
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="Img/curso1.jpg" alt="JAVA">
+                    <h2>CURSOS DESTACADOS</h2>
+                    <div class="card-list-cursos">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso1.jpg" alt="JAVA">
+                            </div>
+                            <div class="text-curso">
+                                <h3>Java - curso inicial</h3>
+                                <button id="ver_curso">
+                                    Ver Curso
+                                </button>
+                                
+                            </div>
                         </div>
-                        <div class="text-curso">
-                            <h3>Java- curso inicial</h3>
-                            <p class="categoria">
-                               Ver detalle
-                            </p>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso2.jpg" alt="CSS">
+                            </div>
+                            <div class="text-curso">
+                                <h3>CSS - curso inicial</h3>
+                            </div>
+                            <button id="ver_curso">
+                                Ver Curso
+                            </button>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso3.jpg" alt="HTML">
+                            </div>
+                            <div class="text-curso">
+                                <h3>HTML - curso inicial</h3>
+                            </div>
+                            <button id="ver_curso">
+                                Ver Curso
+                            </button>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="Img/curso2.jpg" alt="CSS">
+                <div class="seccion_escondida">
+                        <div class="boton_mas_cursos">
+                            <button id="boton_mostrat" onclick="mostrar();">VER TODOS LOS CURSOS</button>
                         </div>
-                        <div class="text-curso">
-                            <h3>CSS- curso inicial</h3>
-                            <p class="categoria">
-                                Ver detalle
-                            </p>
+                    <div id="card-list-cursos2">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso4.jpg" alt="CSS">
+                            </div>
+                            <div class="text-curso">
+                                <h3>JavaScript - curso inicial</h3>
+                            </div>
+                            <button id="ver_curso">
+                                Ver Curso
+                            </button>
                         </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso5.jpg" alt="HTML">
+                            </div>
+                            <div class="text-curso">
+                                <h3>C++ - curso inicial</h3>
+                            </div>
+                            <button id="ver_curso">
+                                Ver Curso
+                            </button>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso6.jpg" alt="HTML">
+                            </div>
+                            <div class="text-curso">
+                                <h3>Phyton - curso inicial</h3>
+                            </div>
+                            <button id="ver_curso">
+                                Ver Curso
+                            </button>   
+                        </div>
+                        <button id="boton_ocultar" onclick="ocultar();">OCULTAR TODOS LOS CURSOS</button>
                     </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="Img/curso3.jpg" alt="HTML">
-                        </div>
-                        <div class="text-curso">
-                            <h3>HTML- curso inicial</h3>
-                            <p class="categoria">
-                               Ver detalle
-                            </p>
-                        </div>
-                    </div>
-                  
-
                 </div>
-                    </div>  
+            </div>  
 
                     <div id="Pagos_destacados">
                         <h2>FORMAS DE PAGO</h2>
@@ -162,22 +217,16 @@
                             </div>  
         </div>
 
-
-<video autoplay loop>
-    <source src="Img/video.mp4" >
-</video>
-<div class="capa"></div>
-
-         
+    
       
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <h4>INTEGRANTES</h4>
-                <p>Gómez Celeste-45809908</p>
-                <p>Sleiman Yamila- 43316917</p>
-                <p>Viola Melina-44163024</p>
+                <p>Gómez Celeste - 45809908</p>
+                <p>Sleiman Yamila - 43316917</p>
+                <p>Viola Melina - 44163024</p>
             </div>
          
             <div id="box">

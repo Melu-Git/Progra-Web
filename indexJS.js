@@ -1,4 +1,32 @@
-const slider= document.querySelector("#carrousel");
+const carousel = document.querySelector('.carousel');
+const images = carousel.querySelectorAll('img');
+let currentImageIndex = 0;
+
+function showNextImage() {
+  images[currentImageIndex].classList.remove('active');
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  images[currentImageIndex].classList.add('active');
+}
+var intervalo = setInterval(showNextImage, 2000);
+
+
+/*automatico*/
+setInterval(function(){
+    Next();
+}, 5000);
+
+
+function mostrar(){
+    document.getElementById('card-list-cursos2').style.display = 'grid';
+    
+}
+
+function ocultar(){
+    document.getElementById('card-list-cursos2').style.display = 'none';
+}
+
+
+/*const slider= document.querySelector("#carrousel");
 let carrouselSection= document.querySelectorAll(".carrousel_section");
 let carrouselSectionLast= carrouselSection[carrouselSection.length -1];
 
@@ -38,8 +66,4 @@ btnRight.addEventListener('click', function(){
 btnLeft.addEventListener('click', function(){
     Prev();
 });
-
-/*automatico*/
-setInterval(function(){
-    Next();
-}, 5000);
+*/
