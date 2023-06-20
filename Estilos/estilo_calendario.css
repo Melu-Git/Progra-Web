@@ -4,16 +4,19 @@
     box-sizing: border-box;
 }
 main{
-    background-color: #d9c6a6;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
+    background: linear-gradient(to right, #3c1053, #ad5389); 
 }
 
-.contenerdor-calendario{
+
+#contenedor-calendario{
     width: 90%;
     max-width: 1200px;
-    margin: 30px 330px;
+    margin: 30px 30px;
+    margin-left: 75px;
     border-radius: 15px;
     display: inline-block;
-    background-color: #ffebcd; 
+    background-color: white; 
     box-shadow: 0px 2px 20px rgb(0,0,0,0.2);
 }
 .nombre-mes{
