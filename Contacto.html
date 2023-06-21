@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilo_general.css">
     <link rel="stylesheet" href="Estilos/estilo_contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Celestina - Página de Inicio</title>
 </head>
 <body>
-    <header id="Inicio">
-        <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.png" ></a>
-    </header>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -34,42 +32,44 @@
                 </form>
             </li>
             <!--CARRITO DE COMPRAS-->
-            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> 
+            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.jpg"></a></li> 
         </ul>
     </nav>
     <main>
-    <div>
-        <section id="section-contact">
+    <div id="content"> 
+        <div id="mapa">
+            <h3>Mapa de ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.364333972249!2d-58.5653801228567!3d-34.67075316104386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1682711667712!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="section-contact">
             <header class="header">
-                <span><img id="logo-contacto" src="Img/Logo_contacto.png" alt=""></span>
+                <span><img id="logo-contacto" src="Img/Logo_contacto.png" alt=""><h2>Habla con nosotros</h2></span>
             </header>
-            <h2>Habla con nosotros</h2>
+            
             <!--DATOS PARA CONTACTO-->
             <form class="contact-form" action="#" method="get">
                 <p class="contact-form__p"> <!--La clase puesta asi es por metodologia BEM para identificar mas especificamente y evitar errores-->
                     <label id="pre" for="NombreApellido">Nombre Completo</label>
-                    <input type="text" id="Nombre-Contacto" name="Nombre" placeholder="Nombre" required>
-                    <input type="text" id="Apellido-Contacto" name="Apellido" placeholder= "Apellido" required></p>
+                    <input type="text" id="Nombre-Contacto" name="Nombre" placeholder="Juanito" required>
+                    <input type="text" id="Apellido-Contacto" name="Apellido" placeholder= "Pérez" required></p>
                 
                 <p class="contact-form__p">
                     <label id="pre" for="Email">Email</label>
-                    <input type="email" id="Email Contacto" name="Email" required></p>
+                    <input type="email" id="Email Contacto" name="Email" required placeholder="ejemplo@demail.com"></p>
                 
                 <p class="contact-form__p">
                     <label id="pre" for="Consulta">Consulta</label>
-                    <textarea name="Consulta" id="onsulta Contacto" cols="30" rows="10"placeholder="Escriba aqui su mensaje"></textarea>
+                    <textarea name="Consulta" id="onsulta Contacto" cols="30" rows="10" placeholder="Escriba aqui su mensaje"></textarea>
                     
                 <p class="contact-form__p"><button type="submit">Enviar</button></p>  
             </form>
-        </section>
-    </div>
-    <section id="mapa">
-        <h3>Mapa de ubicación</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.364333972249!2d-58.5653801228567!3d-34.67075316104386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1682711667712!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>  
+       
         <div id="back">
             <a href="index.html">Volver</a>
         </div>
-    </section>
+    </div>
+    
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -95,10 +95,10 @@
             <div id="red-social">
                 <h4>SIGUENOS</h4>
                 <ul>
-                    <li><a href="https://www.facebook.com/UnlamOficial/">
+                    <li><a href="https://www.unlam.edu.ar/">
                         <img src="Img/Facebook-logo.png" alt="facebook"><p>Facebook</p> 
                     </a></li>
-                    <li><a href="https://www.instagram.com/unlamoficial/">
+                    <li><a href="https://www.unlam.edu.ar/">
                         <img src="Img/Instagram-logo.png" alt="Instagram"><p>Instagram</p>
                     </a></li>
                     <li><a href="https://www.unlam.edu.ar/">

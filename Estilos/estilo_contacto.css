@@ -5,104 +5,162 @@
     text-align: center;
 }
 main{
-    background-color: #d9c6a6;
     height: 100vh;
+    justify-content: center;
+    background-color: #b483c7b9;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 0px;
+    padding: 40px; 
+    justify-content: center;
+    position: static;
+}
+#back{
+    position: static; 
+    align-items: center;
+    transform: translate(45% , 150%);
 }
 #back a{
-    color: #c5a22d;
-    position: absolute;
+    color: #ffffff;
+    background-color:  #80397a;
     padding-top: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 10px;
-   
-    transform: translate(-50%, 15%);
     border-radius: 10px 10px 10px 10px;
-    border: 1px solid black;
+    border: 1px  black;
     
 }
 a:link{
     text-decoration: none;
 }
 #back :hover{
-    color: #ffffff;
-    background-color: #c5a22d;
+    color: #000000;
+    background-color: #d532c8;
 }
 #mapa{
-    left: 30%;
+    /*left: 30%;*/
     width: 650px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 60px;
-    position: absolute;
-    background-color:  #ffebcd;
-    transform: translate(-45%, 17.5%); /*izq-der// arriba-abajo*/
+    margin-top: 20px;
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-right:0px;
+    padding-bottom: 30px;
+    /*transform: translate(-45%, 17.5%); /*izq-der// arriba-abajo*/
     border-radius: 10px 10px 10px 10px;
+    
 }
-#mapa h3{
-    padding: 20px;
+#mapa iframe{
+    width: 500px;
+    height: 550px;
+    margin-top: 30px;
+    box-shadow: 0px 6px 10px #80397a,
+                0px -6px 10px #80397a;
+}
+h3{
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: x-large;
-}
-#logo-contacto{
-    width: 100px;
-    height: 100px;
+    color: #000000;
+    text-shadow:0px 6px 10px #f78eee,
+                0px -6px 10px #f78eee;
+     display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: large;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
 #section-contact{
-    background-color:  #ffebcd;
     width: 600px;
-    position: absolute ;
-    left: 53%;
-    transform: translate(-10%, 10%);
+    height: 700px;
+    padding-top: 30px;
+    position: relative ;
+    transform: translate(-10% , 0%);
     border-radius: 10px 10px 10px 10px;
+    /*left: 53%;
+    /*transform: translate(-10%, 10%);*/
+}
+#logo-contacto{
+    width: 50px;
+    height: 50px;
 }
 .header{
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 10px 10px 10px 10px;
-    background-color: #ffebcd;
+    background-color: transparent;
 }
 .header span{
-    font-size: 100px;
+    font-size: 30px;
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .contact-form{
     padding: 0.8rem;
     overflow: hidden;
-    color: grey;
+    color: rgb(0, 0, 0);
+    text-shadow:0px 6px 10px #f78eee,
+                0px -6px 10px #f78eee;
+    
 }
-.contact-form label, .contact-form input, .contact-form textarea{
+.contact-form label{
     display: block;
     width: 100%;
     margin-bottom: 8px;
+    font-size: large;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
 .contact-form label{
     font-weight: 700px;
+    margin-top: 15px;
 }
-.contact-form input:not([type=´submit]), .contact-form textarea{
+.contact-form input:not([type=´submit]){
+    width: 70%;
     border: none;
-    border-bottom: 2px solid #c5a22d;
+    display: relative;
+    font-size: 18px;
+    font-size: large;
+    border-radius: 5px;
     margin-bottom: 10px;
-    font-size: 20px;
-    outline: none;
+    box-shadow: 0px 3px 10px #80397a,
+                0px -3px 10px #80397a;
 }
 .contact-form textarea{
-    min-height: 100px;
+    width: 80%;
+    height: 200px;
+    margin-bottom: 8px;
+    font-size: large;
+    display: relative;
+    min-height: 110px;
     max-width: 570px;
+    position: static;
+    box-shadow: 0px 3px 10px #80397a,
+                0px -3px 10px #80397a;
+    resize: none
 }
 button{
-    width: 100%;
+    width: 70%;
     padding: 10px;
     cursor: pointer;
-    color: #c5a22d;
+    color: #ffffff;
     font-size: large;
-    border-style: double;
-    background-color:  #ffebcd;
+    background-color:  #80397a;
     border-radius: 10px 10px 10px 10px;
+    border: none;
 }
 button:hover{
-    color: #ffffff;
-    background-color: #c5a22d;
+    color: #000000;
+    background-color: #d532c8;
 }
+
 

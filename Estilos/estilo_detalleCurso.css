@@ -245,17 +245,9 @@ content: '-';
     text-align: center;
 }
 
-<<<<<<< HEAD
 
 /* FIN DE CAJA DE CONTENIDO*/
 
-=======
-}
-.categoria:hover{
-    color:#c18007;
-    text-decoration: underline;
-}
->>>>>>> feb5e84bccd6e558e0c394d816b8d0be13422a6d
 
 /*CLASES*/
 .caja-contenidos2, .caja-contenidos3, #cotenido1{
@@ -477,5 +469,4 @@ background: linear-gradient(to right, #3c1053, #ad5389);
 .ver_curso:hover{
         background: rgb(6,4,17);
         background: linear-gradient(90deg, rgba(6,4,17,1) 7%, rgba(150,139,221,1) 76%);
-        
 }
