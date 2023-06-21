@@ -18,11 +18,13 @@ setInterval(function(){
 
 function mostrar(){
     document.getElementById('card-list-cursos2').style.display = 'grid';
-    
+    document.getElementById('boton_mostrat' ).style.display='none';
 }
 
 function ocultar(){
     document.getElementById('card-list-cursos2').style.display = 'none';
+    document.getElementById('boton_mostrat' ).style.display='grid';
+    
 }
 
 

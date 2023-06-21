@@ -4,109 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="Estilos/estilo_general.css">
     <link rel="stylesheet" href="Estilos/estilo_index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Celestina - Página de Inicio</title>
 </head>
 <body>
-    <header id="Inicio">
-        <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.jpg" ></a>
+    <header id="Inicio" class="header">
+        <div class="container-header">
+            <a href="index.html"><img id="logo-principal" src="Img/CELESTINA.jpg" ></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contacto.html">Contactanos</a></li>
+                    <li><a href="Calendario.html">Calendario</a></li>
+                    <li><a href="Detalle del curso.html">Detalles del curso</a></li>
+                    <li><a href="Personalización.html">Gift Cards</a></li>
+                    <li> <!--BARRA DE BUSQUEDA-->
+                        <form action="#" method="post" >
+                            <datalist id="buscadorcursos">
+                                <option value="HTML"></option>
+                                <option value="JavaScript"></option>
+                                <option value="CSS"></option>
+                                <option value="Java"></option>
+                                <option value="C++"></option>
+                            </datalist>
+                            <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
+                            <input type="submit" value="Buscar" class="lupa">
+                        </form>
+                    </li>
+                    <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Contacto.html">Contactanos</a></li>
-            <li><a href="Calendario.html">Calendario</a></li>
-            <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-            <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
-            <li><a href="Personalización.html">Gift Cards</a></li>
-            <li> <!--BARRA DE BUSQUEDA-->
-                <form action="#" method="post" >
-                    <datalist id="buscadorcursos">
-                        <option value="HTML"></option>
-                        <option value="JavaScript"></option>
-                        <option value="CSS"></option>
-                        <option value="Java"></option>
-                        <option value="C++"></option>
-                    </datalist>
-                    <input type="text" name="buscador" id="buscador" list="buscadorcursos" placeholder="Buscar ">
-                    <input type="submit" value="Buscar" class="lupa">
-                </form>
-            </li>
-            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
-        </ul>
-    </nav>
+   
     <!--CONTENIDO PRINCIPAL-->
     
-    <main>
+    <video autoplay muted loop id="fondo">
+        <source src="Img/video.mp4" type="video/mp4">
+      </video>
+    <main id="main">
+        <div class="container-main">
+            <!--CARROUSEL NUEVO-->
+            <div class="carousel">
+                <img src="Img/banner1 (1).jpg" alt="Imagen 1" loading="eager" id="img1">
+                <img src="Img/banner1 (2).jpg" alt="Imagen 2">
+                <img src="Img/banner1 (3).jpg" alt="Imagen 3">
+                <img src="Img/banner1 (4).jpg" alt="Imagen 4">
+              </div>
 
-        <article id="contenido-principal">
-            <section id="carrousel">
-                <div>
-                    <img src="Img/carrusel.png" alt="pruebaBanner" class="imag">
-                </div>
-            </section>
-            <section id="Cursos_destacados">
-                <h3>Cursos destacados</h3>
-                    <ul>
-                        <li><div class="card">
+            <div id="Cursos_destacados">
+                    <h2>CURSOS DESTACADOS</h2>
+                    <div class="card-list-cursos">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso1.jpg" alt="JAVA">
+                            </div>
+                            <div class="text-curso">
+                                <h3>Java - curso inicial</h3>
+                                <a href="Formulario_Java.html" id="ver_curso" target="_blank">Ver Curso</a>
+                            </div>
+                        </div>
+                        <div class="card">
                             <div class="card-img">
                                 <img src="Img/curso2.jpg" alt="CSS">
                             </div>
                             <div class="text-curso">
-                                <h5>CSS- curso inicial</h5>
-                                <p class="categoria">Ver detalle</p>
-                            </div></li>
+                                <h3>CSS - curso inicial</h3>
+                                <a href="Formulario_Css.html" id="ver_curso" target="_blank">Ver Curso</a>
+                            </div>
                         </div>
-                        <li><div class="card">
+                        <div class="card">
                             <div class="card-img">
                                 <img src="Img/curso3.jpg" alt="HTML">
                             </div>
                             <div class="text-curso">
-                                <h5>HTML- curso inicial</h5>
-                                <p class="categoria">Ver detalle</p>
+                                <h3>HTML - curso inicial</h3>
+                                <a href="Formulario_Html.html" id="ver_curso" target="_blank">Ver Curso</a>
                             </div>
-                        </div></li>
-                       <li><div class="card">
+                        </div>
+                    </div>
+                <div class="seccion_escondida">
+                        <div class="boton_mas_cursos">
+                            <button id="boton_mostrat" onclick="mostrar();">VER TODOS LOS CURSOS</button>
+                        </div>
+                    <div id="card-list-cursos2" style="display:none;">
+                        <div class="card">
                             <div class="card-img">
-                                <img src="Img/curso4.jpg" alt="JAVASCRIPT">
+                                <img src="Img/curso4.jpg" alt="CSS">
                             </div>
                             <div class="text-curso">
-                                <h5>JAVASCRIPT- curso inicial</h5>
-                                <p class="categoria">Ver detalle</p>
-                            </div></li>
-                        </ul> 
-            </section>  
-            <section id="Metodos_de_pago">
-                <h3>Métodos de pago</h3>
-                    <ul>
-                        <li><img src="Img/Mercado-Pago-Logo.png" alt=""></li>
-                        <li><img src="Img/logo-uala.png" alt=""></li>
-                        <li><img src="Img/logo-mastercard.png" alt=""></li>
-                        <li><img src="Img/logo-visa.png" alt=""></li>
-                        <li><img src="Img/logo-transfer.png" alt=""></li>
-                        <li><img src="Img/logo-efvo.png" alt=""></li>
-                    </ul>
-            </section> 
-        </article>
-    </div>
-</div>
+                                <h3>JavaScript - curso inicial</h3>
+                                <a href="Formulario_Js.html" id="ver_curso" target="_blank">Ver Curso</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso5.jpg" alt="HTML">
+                            </div>
+                            <div class="text-curso">
+                                <h3>C++ - curso inicial</h3>
+                                <a href="Formulario_C++.html" id="ver_curso" target="_blank">Ver Curso</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="Img/curso6.jpg" alt="HTML">
+                            </div>
+                            <div class="text-curso">
+                                <h3>Phyton - curso inicial</h3>
+                                <a href="Formulario_Python.html" id="ver_curso" target="_blank">Ver Curso</a>
+                            </div>
+                        </div>
+                        <button id="boton_ocultar" onclick="ocultar();">OCULTAR TODOS LOS CURSOS</button>
+                    </div>
+                </div>
+            </div>  
 
+                    <div id="Pagos_destacados">
+                        <h2>FORMAS DE PAGO</h2>
+                        <div class="card-list-pagos">
+                            <div class="pagos">
+                                <div class="pagos-img">
+                                    <img src="Img/fp1-removebg-preview.png" alt="JAVA">
+                                </div>
+                               
+                            </div>
+                            <div class="pagos">
+                                <div class="pagos-img">
+                                  <img src="Img/fp2-removebg-preview.png" alt="">
+                                </div>
+                              
+                            </div>
+                            <div class="pagos">
+                                <div class="pagos-img">
+                                    <img src="Img/fp3-removebg-preview.png" alt="JAVA">
+                                </div>
+                                
+                            </div>
+                            <div class="pagos">
+                                <div class="pagos-img">
+                                    <img src="Img/fp4-removebg-preview.png" alt="JAVA">
+                                </div>
+                               
+                            </div>
+                            <div class="pagos">
+                                <div class="pagos-img">
+                                    <img src="Img/fp5-removebg-preview.png" alt="JAVA">
+                                </div>
+                               
+                            </div>
+                            <div class="pagos">
+                                <div class="pagos-img">
+                                    <img src="Img/6-removebg-preview.png" alt="JAVA">
+                                </div>
+                               
+                            </div>
+                          
+                        </div>
+                            </div>  
+        </div>
 
-            <!--<aside class="Pasos-a-seguir">
-                <h3>Pasos a seguir</h3>
-                <section>
-                    <div id="Paso_1">
     
-                    </div>
-                    <div id="Paso_2">
-    
-                    </div>
-                    <div id="Paso_3">
-    
-                    </div>
-                </section>
-            </aside>-->
       
     </main>
     <footer class="pie-pagina">
@@ -125,7 +189,6 @@
                         <li><a href="Contacto.html">Contactanos</a></li>
                         <li><a href="Calendario.html">Calendario</a></li>
                         <li><a href="Detalle del curso.html">Detalles del curso</a></li>
-                        <li><a href="Inscripción.html">Formulario de inscripcion</a></li>
                         <li><a href="Personalización.html">Gift Cards</a></li>
                     </ul>
             </div>
@@ -133,13 +196,13 @@
             <div id="red-social">
                 <h4>SIGUENOS</h4>
                 <ul>
-                    <li><a href="https://www.facebook.com/UnlamOficial/">
+                    <li><a href="https://www.facebook.com/UnlamOficial/" target="_blank">
                         <img src="Img/Facebook-logo.png" alt="facebook"><p>Facebook</p> 
                     </a></li>
-                    <li><a href="https://www.instagram.com/unlamoficial/">
+                    <li><a href="https://www.instagram.com/unlamoficial/" target="_blank">
                         <img src="Img/Instagram-logo.png" alt="Instagram"><p>Instagram</p>
                     </a></li>
-                    <li><a href="https://www.unlam.edu.ar/">
+                    <li><a href="https://www.unlam.edu.ar/" target="_blank">
                         <img src="Img/Unlam-logo.png" alt="UnlamOficial"><p>UNLaM Oficial</p>
                     </a></li>  
                 </ul> 
@@ -150,5 +213,7 @@
            <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
         </div>
     </footer>
+  
+    <script src="JavaScript/indexJS.js"></script>
 </body>
 </html>
