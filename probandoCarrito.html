@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="Estilos/estilo_index.css">
+  <style>
+    /* Estilos CSS existentes */
+
+    /* Estilos CSS para el carrito de compras */
+    #carrito {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    #contador {
+      background-color: #3E0169;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    /* Estilos CSS para el popup de cursos obtenidos */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #cursos-obtenidos {
+      margin-bottom: 10px;
+    }
+
+    #mensaje-vacio {
+      text-align: center;
+      font-style: italic;
+      color: gray;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Resto de tu código HTML -->
+
+  <div id="Cursos_destacados">
+    <h2>CURSOS DESTACADOS</h2>
+    <div class="card-list-cursos">
+      <div class="card">
+        <div class="card-img">
+          <img src="Img/curso1.jpg" alt="JAVA">
+        </div>
+        <div class="text-curso">
+          <h3>Java - curso inicial</h3>
+          <a href='2Detalle_curso_java.html' class="ver_curso">Ver detalle</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="Img/curso2.jpg" alt="CSS">
+        </div>
+        <div class="text-curso">
+          <h3>CSS - curso inicial</h3>
+        </div>
+        <a href='3Detalle_curso_css.html' class="ver_curso">Ver detalle</a>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="Img/curso3.jpg" alt="HTML">
+        </div>
+        <div class="text-curso">
+          <h3>HTML - curso inicial</h3>
+        </div>
+        <a href='4Detalle_curso_Html.html' class="ver_curso">Ver detalle</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion_escondida">
+    <div class="boton_mas_cursos">
+      <button id="boton_mostrar" onclick="mostrarCursos();">VER TODOS LOS CURSOS</button>
+    </div>
+    <div id="card-list-cursos2">
+      <div class="card">
+        <div class="card-img">
+          <img src="Img/curso4.jpg" alt="CSS">
+        </div>
+        <div class="text-curso">
+          <h3>JavaScript - curso inicial</h3>
+        </div>
+        <a href='5Detalle_curso_JS.html' class="ver_curso">Ver detalle</a>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="Img/curso5.jpg" alt="HTML">
+        </div>
+        <div class="text-curso">
+          <h3>C++ - curso inicial</h3>
+        </div>
+        <a href='1Detalle del curso_c++.html' class="ver_curso">Ver detalle</a>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="Img/curso6.jpg" alt="HTML">
+        </div>
+        <div class="text-curso">
+          <h3>Phyton - curso inicial</h3>
+        </div>
+        <a href='6Detalle_curso_Phyton.html' class="ver_curso">Ver detalle</a>
+      </div>
+    </div>
+    <button id="boton_ocultar" onclick="ocultarCursos();">OCULTAR TODOS LOS CURSOS</button>
+  </div>
+
+  <!-- Código JavaScript -->
+  <script>
+    // Obtener referencia a los elementos del DOM
+    var contadorElement = document.getElementById('contador');
+    var cursosObtenidosElement = document.getElementById('cursos-obtenidos');
+    var popupElement = document.getElementById('popup');
+    var mensajeVacioElement = document.getElementById('mensaje-vacio');
+
+    // Verificar si hay un contador almacenado en sessionStorage
+    if (sessionStorage.getItem('contador')) {
+      // Obtener el valor almacenado
+      var contador = parseInt(sessionStorage.getItem('contador'));
+      // Actualizar el contador en el botón
+      contadorElement.textContent = contador;
+    }
+
+    // Función para incrementar el contador y almacenar en sessionStorage
+    function incrementarContador() {
+      // Obtener el valor actual del contador
+      var contador = parseInt(contadorElement.textContent);
+      // Incrementar el contador
+      contador++;
+      // Actualizar el contador en el botón
+      contadorElement.textContent = contador;
+      // Almacenar el contador en sessionStorage
+      sessionStorage.setItem('contador', contador.toString());
+    }
+
+    // Función para mostrar los cursos obtenidos en el popup
+    function mostrarCursosObtenidos() {
+      // Obtener el valor actual del contador
+      var contador = parseInt(contadorElement.textContent);
+
+      // Si no hay cursos obtenidos, mostrar mensaje vacío
+      if (contador === 0) {
+        mensajeVacioElement.style.display = 'block';
+        cursosObtenidosElement.style.display = 'none';
+      } else {
+        // Mostrar cursos obtenidos
+        mensajeVacioElement.style.display = 'none';
+        cursosObtenidosElement.style.display = 'block';
+        cursosObtenidosElement.textContent = 'Cursos obtenidos: ' + contador;
+      }
+
+      // Mostrar el popup
+      popupElement.style.display = 'block';
+    }
+
+    // Event listener para el botón "Comprar" de cada curso
+    var botonesComprar = document.getElementsByClassName('ver_curso');
+    for (var i = 0; i < botonesComprar.length; i++) {
+      botonesComprar[i].addEventListener('click', incrementarContador);
+    }
+
+    // Función para mostrar los cursos ocultos
+    function mostrarCursos() {
+      var cursosOcultos = document.getElementById('card-list-cursos2');
+      cursosOcultos.style.display = 'grid';
+      var botonMostrar = document.getElementById('boton_mostrar');
+      botonMostrar.style.display = 'none';
+    }
+
+    // Función para ocultar los cursos
+    function ocultarCursos() {
+      var cursosOcultos = document.getElementById('card-list-cursos2');
+      cursosOcultos.style.display = 'none';
+      var botonMostrar = document.getElementById('boton_mostrar');
+      botonMostrar.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

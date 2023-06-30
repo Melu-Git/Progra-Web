@@ -260,12 +260,12 @@ temporary rendered events).
   font-size: 0.85em;
   line-height: 1.4;
   border-radius: 3px;
-  border: 1px solid #3788d8;
+  border: 1px solid #3c1053;
 }
 
 .fc-event,
 .fc-event-dot {
-  background-color: #3788d8;
+  background-color: #3c1053;
   /* default BACKGROUND color */
 }
 
@@ -579,7 +579,8 @@ TODO: more distinction between this file and common.css
 }
 
 .fc-unthemed td.fc-today {
-  background: #fcf8e3;
+  background: #b731ff;
+  opacity: 30%;
 }
 
 .fc-unthemed .fc-disabled-day {
