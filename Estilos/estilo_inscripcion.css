@@ -9,6 +9,7 @@
     z-index: 1;
 }
 #fondo {
+    opacity: 0.9;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -48,6 +49,26 @@ main{
     justify-content: center;
     background-color: #80397aaf;  
     
+}
+.monto{
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+}
+#inscripcion{
+    font-size: small;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    justify-content: flex-start;
+    border: none;
+    color: white;
+    padding: 0.7rem 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+    background: #3E0169;
+    font-family: 'Press Start 2P', cursive;
 }
 #form_1{
     display: flex;
@@ -184,21 +205,20 @@ main{
 }
 /*BOTON AGREGAR PERSONA*/
 .buttonformulario{
-    font-size: x-small;
+    border: none;
     border: none;
     padding: 10px;
-    margin-right: 5px;
-    color: #000000;
-    cursor: pointer;
-    justify-content: flex-start;
-    background-color: #f78eee;
-    border: none;
-    background: rgb(140, 89, 190);
     color: white;
+    cursor: pointer;
+    line-height: 1.5;
+    margin-top: 10px;
+    font-size: x-small;
     border-radius: 10px;
     padding: 0.7rem 1rem;
-    margin-top: 10px;
+    justify-content: flex-start;
+    background-color: #f78eee;
     font-family: 'Press Start 2P';
+    background: rgb(140, 89, 190);
 }
 .buttonformulario :hover{
     background-color: #5c1f57;
@@ -223,6 +243,7 @@ main{
     padding: 0.7rem 1rem;
     margin-top: 10px;
     font-family: 'Press Start 2P';
+    font-size: x-small;
 }
 
 #volver{
@@ -253,3 +274,4 @@ main{
 a:link{
     text-decoration: none;
 }
+
