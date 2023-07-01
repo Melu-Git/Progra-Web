@@ -143,6 +143,7 @@ margin-top: 15px;
     transition: opacity .6s .4s;
     --transform: traslateY(-100vh);
     --transition: transform .8s;
+    z-index: 3;
 }
 .modal--show{
 opacity: 1;
@@ -199,7 +200,32 @@ color: #3a3a3a;
 .modal_cerrar:hover{
     background-color: white;
     border: 1px solid #3c1053;
-    
+
+}
+
+.continuarInscripcion{
+    text-decoration: none;
+    color: white;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
+    background: linear-gradient(to right, #3c1053, #ad5389); 
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1em 3em;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+.continuarInscripcion:hover{
+    background-color: white;
+    border: 1px solid #3c1053;
+
+}
+
+@media screen and (   max-width: 800px){
+    .modal_container{
+        width: 90%;
+    }
 }
 /* PROBANDO CAJA DE CONTENIDO*/
 .accordion{

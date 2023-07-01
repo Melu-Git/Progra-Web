@@ -34,7 +34,78 @@
     <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
 
     <main>
+        <div id="Cursos_destacados">
+            <div class="card-list-cursos">
+            <div class="card">
+                <div class="card-img">
+                <img src="Img/curso1.jpg" alt="JAVA">
+                </div>
+                <div class="text-curso">
+                <h3>Java - curso inicial</h3>
+                <a href='2Detalle_curso_java.html' class="ver_curso">Ver detalle</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="Img/curso2.jpg" alt="CSS">
+                </div>
+                <div class="text-curso">
+                <h3>CSS - curso inicial</h3>
+                </div>
+                <a href='3Detalle_curso_css.html' class="ver_curso">Ver detalle</a>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="Img/curso3.jpg" alt="HTML">
+                </div>
+                <div class="text-curso">
+                <h3>HTML - curso inicial</h3>
+                </div>
+                <a href='4Detalle_curso_Html.html' class="ver_curso">Ver detalle</a>
+            </div>
+            </div>
+        </div>
 
+        <div class="seccion_escondida">
+            <div id="card-list-cursos2">
+            <div class="card">
+                <div class="card-img">
+                <img src="Img/curso4.jpg" alt="CSS">
+                </div>
+                <div class="text-curso">
+                <h3>JavaScript - curso inicial</h3>
+                </div>
+                <a href='5Detalle_curso_JS.html' class="ver_curso">Ver detalle</a>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="Img/curso5.jpg" alt="HTML">
+                </div>
+                <div class="text-curso">
+                <h3>C++ - curso inicial</h3>
+                </div>
+                <a href='1Detalle del curso_c++.html' class="ver_curso">Ver detalle</a>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="Img/curso6.jpg" alt="HTML">
+                </div>
+                <div class="text-curso">
+                <h3>Phyton - curso inicial</h3>
+                </div>
+                <a href='6Detalle_curso_Phyton.html' class="ver_curso">Ver detalle</a>
+            </div>
+            </div>
+        </div>
+
+        <div id="carrito">
+            <button id="contador" onclick="mostrarCursosObtenidos()">0</button>
+          </div>
+
+          <div id="popup" class="popup">
+            <div id="cursos-obtenidos"></div>
+            <div id="mensaje-vacio">Todavía no se obtuvieron cursos</div>
+          </div>
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -58,10 +129,10 @@
             <div id="red-social">
                 <h4>SIGUENOS</h4>
                 <ul>
-                    <li><a href="https://www.facebook.com/UnlamOficial/" target="_blank">
-                        <img src="Img/Facebook-logo.png" alt="facebook"><p>Facebook</p> 
+                    <li><a href="https://www.facebook.com/UnlamOficial/?locale=es_LA" target="_blank">
+                        <img src="Img/Facebook-logo.png" alt="facebook" ><p>Facebook</p> 
                     </a></li>
-                    <li><a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <li><a href="https://www.instagram.com/unlamoficial/?hl=es" target="_blank">
                         <img src="Img/Instagram-logo.png" alt="Instagram"><p>Instagram</p>
                     </a></li>
                     <li><a href="https://www.unlam.edu.ar/" target="_blank">
@@ -70,6 +141,7 @@
                 </ul> 
             </div>
         </div>
+        <script src="JavaScript/carrito.js"></script>
         
        <div class="grupo-2">
            <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>

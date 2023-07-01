@@ -1,31 +1,3 @@
-const carousel = document.querySelector('.carousel');
-const images = carousel.querySelectorAll('img');
-let currentImageIndex = 0;
-
-function showNextImage() {
-  images[currentImageIndex].classList.remove('active');
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  images[currentImageIndex].classList.add('active');
-}
-var intervalo = setInterval(showNextImage, 2000);
-
-
-/*automatico*/
-setInterval(function(){
-    Next();
-}, 5000);
-
-
-function mostrar(){
-    document.getElementById('card-list-cursos2').style.display = 'grid';
-    document.getElementById('boton_mostrat' ).style.display='none';
-}
-
-function ocultar(){
-    document.getElementById('card-list-cursos2').style.display = 'none';
-    document.getElementById('boton_mostrat' ).style.display='grid';
-}
-
 // Obtener referencia a los elementos del DOM
 var contadorElement = document.getElementById('contador');
 var cursosObtenidosElement = document.getElementById('cursos-obtenidos');
@@ -73,7 +45,23 @@ function mostrarCursosObtenidos() {
 }
 
 // Event listener para el botón "Comprar" de cada curso
-var botonesComprar = document.getElementsByClassName('comprar');
+var botonesComprar = document.getElementsByClassName('ver_curso');
 for (var i = 0; i < botonesComprar.length; i++) {
   botonesComprar[i].addEventListener('click', incrementarContador);
+}
+
+// Función para mostrar los cursos ocultos
+function mostrarCursos() {
+  var cursosOcultos = document.getElementById('card-list-cursos2');
+  cursosOcultos.style.display = 'grid';
+  var botonMostrar = document.getElementById('boton_mostrar');
+  botonMostrar.style.display = 'none';
+}
+
+// Función para ocultar los cursos
+function ocultarCursos() {
+  var cursosOcultos = document.getElementById('card-list-cursos2');
+  cursosOcultos.style.display = 'none';
+  var botonMostrar = document.getElementById('boton_mostrar');
+  botonMostrar.style.display = 'block';
 }

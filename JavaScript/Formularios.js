@@ -3,7 +3,7 @@ setInterval(function(){
     Next();
 }, 5000);
 
-
+/*OCULTAMIENTO */
 function ocultar1(){
     document.getElementById('form_2').style.display = 'none';
 }
@@ -11,7 +11,6 @@ function mostrar1(){
     document.getElementById('form_2').style.display = 'grid';
     
 }
-
 function mostrar2(){
     document.getElementById('form_3').style.display = 'grid';
     
@@ -33,8 +32,6 @@ function mostrarImagen() {
   function ocultarImagen(){
     document.getElementById('alerta').style.display = 'none';
 }
-
-
 
 /*CONTADOR DE PERSONAS INSCRIPTAS*/
 // Obtener el botón y el elemento donde se mostrará el contador
@@ -68,24 +65,25 @@ button2.addEventListener('click', function() {
 });
 }
 
+/*BOTON INSCRIPCION*/
+const accordion = document.getElementsByClassName('contentBx');
+for(i=0; i<accordion.length; i++){
+    accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+    })
+};
 
+const openModal = document.querySelector('.boton-inscribirse');
+const modal= document.querySelector('.modal');
+const closeModal= document.querySelector('.modal_cerrar');
 
-/*BOTON INSCRIPCION (OPCION) 
-const submitBtn = document.getElementById('btnSend');
-  submitBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-    
-    const principalData = new FormData(document.getElementById('principal'));
-    const secundarioData = new FormData(document.getElementById('secundario'));
-    const terciarioData = new FormData(document.getElementById('terciario'));
-    
-    const combinedData = new FormData();
-    combinedData.append('principal', principalData);
-    combinedData.append('secundario', secundarioData);
-    combinedData.append('terciario', terciarioData);
-    
-    fetch({
-      method: 'POST',
-      body: combinedData
+openModal.addEventListener('click', (e)=>{
+e.preventDefault();
+modal.classList.add('modal--show');
+});
+
+closeModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.remove('modal--show');
     });
-  });*/
+

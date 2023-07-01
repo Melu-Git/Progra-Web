@@ -25,14 +25,14 @@
 
 /* ESTILO CARROUSEL*/
 .carousel {
-    width: 60%;
+    width: 80%;
     height: 500px;
     position: relative;
     overflow: hidden;
   }
   
   .carousel img {
-    width: 100%;
+    width:100%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -217,4 +217,58 @@ width: 280px
     color: blue;
     text-decoration: underline;
 }
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #mensaje-vacio {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    display: none;
+  }
 
+
+  @media screen and (   max-width: 800px){
+
+    body {
+        max-width: 720px;
+    }
+    body nav ul {
+        flex-direction: column;
+    }
+    body nav ul li a {
+        font-size: 30px;
+    }
+    main {
+        clear: none;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    .card-list-cursos {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-list-pagos {
+        display: flex;
+        flex-direction: column;
+    }
+    div#content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 27px;
+    }
+    .grupo-1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
