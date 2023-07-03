@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
       events: [
         {
             title: 'Curso Java',
-            start: '2023-06-19',
-            end:'2023-07-03'
+            start: '2023-07-19',
+            end:'2023-08-03'
         },
         {
             title: 'Curso HTML',
-            start: '2023-05-29',
-            end:'2023-06-09'
+            start: '2023-07-29',
+            end:'2023-08-09'
         },
         {
             title: 'Curso JavaScript',
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Curso Css',
-            start: '2023-07-10',
-            end:'2023-07-24'
+            start: '2023-08-10',
+            end:'2023-08-24'
         },
         {
             title: 'Curso Python',
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Curso C++',
-            start: '2023-07-20',
-            end:'2023-08-03'
+            start: '2023-08-28',
+            end:'2023-09-11'
         }
         ]
     }); 

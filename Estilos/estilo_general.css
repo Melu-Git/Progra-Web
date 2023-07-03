@@ -68,8 +68,14 @@ nav form #buscador{
 .carrito{
     width: 21px;
     height: 21px;
+    margin-right: 10px;
 }
-
+#numero-carrito{
+    color: white;
+}
+#chango{
+    display: flex;
+}
 
 /*FOOTER*/
 .pie-pagina{
