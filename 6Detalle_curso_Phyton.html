@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilo_general.css">
     <link rel="stylesheet" href="Estilos/estilo_detalleCurso.css">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Detalle del curso</title>
@@ -30,7 +31,11 @@
                     <input type="submit" value="Buscar" class="lupa">
                 </form>
             </li>
-            <li id="carrito"><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+            </li><div id="chango" >
+                <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+                <p id="numero-carrito">0</p>
+            </div>
+            </li> <!--CARRITO DE COMPRAS-->
         </ul>
     </nav>
     <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
@@ -480,5 +485,9 @@
    
 </footer>
 <script src="JavaScript/js_detalleDeCurso.js"></script>
+<script src="JavaScript/indexJS.js"></script>
+<script src="JavaScript/cargarCarrito.js"></script>
+    <script src="JavaScript/carrito.js"></script>
+    <script src="JavaScript/modal.js"></script>
 </body>
 </html>

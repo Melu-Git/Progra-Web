@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Estilos/estilo_calendario.css">
     <link rel="stylesheet" href="Estilos/estilo_general.css">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
 </head>
 <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
 <body>
@@ -35,11 +36,15 @@
                     <input type="submit" value="Buscar" class="lupa">
                 </form>
             </li>
-            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+            </li><div id="chango" >
+                <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+                <p id="numero-carrito">0</p>
+            </div>
+            </li> <!--CARRITO DE COMPRAS-->
         </ul>
     </nav>
     <main>
-        <article id="calendario"></article>
+        <div class="contenedor-calendario"><article id="calendario"></article></div>
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -82,5 +87,9 @@
         </div>
        
     </footer>
+    <script src="JavaScript/indexJS.js"></script>
+    <script src="JavaScript/cargarCarrito.js"></script>
+    <script src="JavaScript/carrito.js"></script>
+    <script src="JavaScript/modal.js"></script>
 </body>
 </html>

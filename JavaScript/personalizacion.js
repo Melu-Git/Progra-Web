@@ -29,12 +29,14 @@ var inputFields = document.getElementsByClassName('input-field');
         previewTitle.style.color = textColor;
 
         var currentDate = new Date();
-        var dateTimeText = currentDate.toLocaleString();
+        // var dateTimeText = currentDate.toLocaleString(); //CAMBIO P- SACAR HORA
 
-        previewDateTime.innerText = dateTimeText;
-        previewDateTime.style.color = textColor;
+        previewDateTime.innerText = currentDate.toLocaleDateString(); // solo muestra la fecha
+
+        // previewDateTime.innerText = dateTimeText; //CAMBIO P- SACAR HORA
+        // previewDateTime.style.color = textColor; //CAMBIO P- SACAR HORA
         var recipientText = recipientInput.value;
-        previewRecipient.innerText = 'Destinatario: ' + recipientText;
+        previewRecipient.innerText = recipientText; /*'Destinatario: ' +  // LO SAQUE */
 
         previewAmount.innerText = 'Valor:$ ' + amountText;
         previewAmount.style.textAlign = location;

@@ -171,7 +171,6 @@ width: 280px
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
-    transform: translate(0% , 0%);
     gap: 10px;
     margin-top: 20px;
    
@@ -236,39 +235,276 @@ width: 280px
     display: none;
   }
 
-
-  @media screen and (   max-width: 800px){
-
-    body {
-        max-width: 720px;
-    }
-    body nav ul {
+.card button{
+    border: none;
+    background: none;
+}
+    
+    /*PANTALLA CELULAR*/
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
         flex-direction: column;
+        max-width: 100%;
+        right: 0;
+    }
+    nav{
+        max-width: 100%;
+        right: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        right: 0;
+
     }
     body nav ul li a {
         font-size: 30px;
+        max-width: 100%;
+        right: 0;
+
     }
-    main {
-        clear: none;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
+    .container-main{
+        width: 90%;
     }
-    .card-list-cursos {
+    footer{
+        right: 0;
+        justify-content: center;
+        right: 0;
+    }
+    .grupo-1{
         display: flex;
         flex-direction: column;
+        right: 0;
+
+    }  
+
+/*Index*/
+     .card-list-cursos{
+        display: flex;
+        flex-direction: column;
+    }
+    #card-list-cursos2{
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
     }
     .card-list-pagos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #boton_ocultar{
+        width: 90%;
+        transform: translate(0% , 0%);
+    }
+    .pagos-img img{
+        height: 120px;
+        object-fit: cover;
+        width: 180px;
+    }
+    h2{
+        max-width: 27rem;
+        justify-content: center;
+        
+    }
+    .carousel {
+        margin: 0;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .carousel img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out; 
+    }
+    
+}
+
+/*PANTALLA TABLET*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        min-width: 601px;
+        max-width: 1024px;
+    }
+    header {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
+        right: 0;
     }
-    div#content {
+    nav{
+        max-width: 100%;
+        right: 0;
+    }
+    nav ul {
         display: flex;
         flex-direction: column;
-        margin-bottom: 27px;
+        align-items: center;
+        max-width: 100%;
+        right: 0;
+
     }
-    .grupo-1 {
+    body nav ul li a {
+        font-size: 30px;
+        max-width: 100%;
+        right: 0;
+
+    }
+    .container-main{
+        width: 90%;
+    }
+    footer{
+        right: 0;
+        justify-content: center;
+        right: 0;
+    }
+    .grupo-1{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;
+        right: 0;
+
+    }  
+
+/*Index*/
+.card-list-cursos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#card-list-cursos2{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+.card-img img{
+    height: 300px;
+    width: 210px;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.card-list-pagos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#boton_ocultar{
+    width: 100%;
+}
+.pagos-img img{
+    height: 150px;
+    width: 225px;
+    object-fit: cover;
+}
+h2{
+    max-width: 50rem;
+    justify-content: center;
+    
+}
+.carousel {
+    margin: 0;
+    min-width: 600px;
+    max-width: 670px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+}
+
+/*PANTALLA PC*/
+@media screen and (min-width: 1025px) {
+    
+    header {
+        max-width: 100%;
+        right: 0;
     }
+    nav{
+        max-width: 100%;
+        right: 0;
+    }
+    nav ul {
+        align-items: center;
+        max-width: 100%;
+        right: 0;
+    }
+    body nav ul li a {
+        font-size: 30px;
+        max-width: 100%;
+        right: 0;
+
+    }
+    .container-main{
+        width: 100%;
+    }
+    footer{
+        right: 0;
+        justify-content: center;
+        right: 0;
+    }
+
+/*Index*/
+.card-list-cursos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#card-list-cursos2{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+.card-img img{
+    height: 400px;
+    width: 280px;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.card-list-pagos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#boton_ocultar{
+    width: 100%;
+}
+.pagos-img img{
+    height: 150px;
+    width: 225px;
+    object-fit: cover;
+}
+h2{
+    right: 0;
+    min-width: 50rem;
+    max-width: 1300px;
+    justify-content: center;
+    
+}
+.carousel {
+    margin: 0;
+    min-width: 900px;
+    max-width: 1070px;
+    min-height: 300px;
+    max-height: 535;
+    position: relative;
+    overflow: hidden;
+  }
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
 }

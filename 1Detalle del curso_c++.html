@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilo_general.css">
     <link rel="stylesheet" href="Estilos/estilo_detalleCurso.css">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Detalle del curso</title>
@@ -31,14 +32,18 @@
                     <input type="submit" value="Buscar" class="lupa">
                 </form>
             </li>
-            <li id="carrito"><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.png"></a></li> <!--CARRITO DE COMPRAS-->
+        </li><div id="chango" >
+            <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+            <p id="numero-carrito">0</p>
+          </div>
+        </li> <!--CARRITO DE COMPRAS-->
         </ul>
     </nav>
     <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
     <main>
         <section class="seccion-1">
             <div class="container-img">
-                <img src="Img/curso5.jpg">
+                <img src="Img/curso5.jpg" id="img">
             </div>
             <div class="container-info">
                   <div class="container-title">
@@ -47,7 +52,7 @@
                 <div class="container-detalles-curso">
                     <div class="form-grupo">
                         <div class="precio">
-                            <img src="Img/logo_argentia.png" alt="Arg">
+                            <img src="Img/logo_argentia.png" alt="Arg" >
                             <p>$11.659</p>
                         </div>
                         <h4>Tiempo de dedicacion necesario: 2 semanas</h4>
@@ -56,8 +61,8 @@
                         <h4>Requisitos previos:</h4>
                         <p>Para este curso es ideal tener conocimientos de pensamiento computacional o saber Python. Para mejorar tu experiencia de cursada, te aconsejamos contar con:</p>
                             <ul>
-                            <li> PC con 6 GB de memoria RAM, procesador I3, 2.2ghz (aunque recomendados 16 GB de RAM y procesador I5, 3.2ghz para que C# pueda correr de forma ágil).</li>
-                            <li>Sistema operativo: Windows 7 o superior. </li>
+                                <li>PC con 6 GB de memoria RAM, procesador I3, 2.2ghz (aunque recomendados 16 GB de RAM y procesador I5, 3.2ghz para que C# pueda correr de forma ágil).</li>
+                                <li>Sistema operativo: Windows 7 o superior. </li>
                             </ul>
                             
                     </div>
@@ -481,6 +486,10 @@
     </div>
    
 </footer>
-<script src="JavaScript/js_detalleDeCurso.js"></script>
+    <script src="JavaScript/indexJS.js"></script>
+    <script src="JavaScript/js_detalleDeCurso.js"></script>
+    <script src="JavaScript/cargarCarrito.js"></script>
+    <script src="JavaScript/carrito.js"></script>
+    <script src="JavaScript/modal.js"></script>
 </body>
 </html>

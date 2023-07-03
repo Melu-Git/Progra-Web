@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilo_general.css">
     <link rel="stylesheet" href="Estilos/estilo_contacto.css">
+    <link rel="stylesheet" href="Estilos/estiloModal.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     
     <title>Celestina - Página de Inicio</title>
@@ -29,8 +30,11 @@
                     <input type="submit" value="Buscar" class="lupa">
                 </form>
             </li>
-            <!--CARRITO DE COMPRAS-->
-            <li><a href="Carrito.html"><img class="carrito" src="Img/Logo_Carrito.jpg"></a></li> 
+            </li><div id="chango" >
+                <a class="nav-menu-link" id="verCursos"><img class="carrito" src="Img/Logo_Carrito.png"></a>
+                <p id="numero-carrito">0</p>
+            </div>
+            </li> <!--CARRITO DE COMPRAS-->
         </ul>
     </nav>
     <img src="Img/fondo_paginasSec.jpg" alt="" id="fondo">
@@ -46,10 +50,10 @@
         </div>
     <div id="content"> 
         <div id="mapa">
-            <div class="mapa-responsive">
+            
             <h3>Mapa de ubicación</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.364333972249!2d-58.5653801228567!3d-34.67075316104386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1682711667712!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        
         </div>
         <div id="section-contact">       
             <header class="header">
@@ -74,11 +78,7 @@
               
               <div id="errores"></div>
          </div>  
-       
-<div id="back">
-    <a href="index.html" type="button" class="volver">Volver</a>
-</div>
-</div>
+        </div>
 </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -117,7 +117,11 @@
         
        <div class="grupo-2">
            <small>&copy; 2023 <b>Celestina</b>-Todos los derechos reservados.</small>
-           <script src="JavaScript/contacto.js"></script>
+            <script src="JavaScript/contacto.js"></script>
+            <script src="JavaScript/indexJS.js"></script>
+            <script src="JavaScript/cargarCarrito.js"></script>
+            <script src="JavaScript/carrito.js"></script>
+            <script src="JavaScript/modal.js"></script>
         </div>
     </footer>
 </body>
