@@ -489,7 +489,7 @@ color: #3a3a3a;
         }
         .grupo-1{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             right: 0;
     
         }  

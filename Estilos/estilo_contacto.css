@@ -318,9 +318,9 @@ body.modal-open {
         }
         
         .grupo-1{
-            display: grid;
-            grid-template-columns: repeat(1,0fr);
-            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
     
         }
       }
@@ -396,17 +396,10 @@ body.modal-open {
             max-height: 200px;
             min-width: 320px;
         }
-        footer{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            right: 0;
-        }
         .grupo-1{
             display: flex;
             flex-direction: row;
-            right: 0;
-    
+            justify-content: center;
         } 
       }
   /*PANTALLA PC*/
